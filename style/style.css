@@ -1,6 +1,21 @@
-placeholder {
+.placeholder {
 	border-radius: 8px;
 	width: 100px;
 	height: 100px;
 	background-color: grey;
+	margin: 5px;
+	float: left;
+	transition-duration: 0.7s;
+}
+
+.placeholder:hover {
+	border: 2px solid black;
+	transform: scale(1.25);
+	transition-duration: 0.7s;
+}
+
+#gallery {
+	display: block;
+	width: 50%;
+	height: 150px;
 }
