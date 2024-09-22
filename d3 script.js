@@ -35,13 +35,18 @@ function init() {
         .scale(yScale)
         .ticks(10);
 
-      line = d3.line()
+      australia = d3.line()
         .defined(function(d) { return d.country == "Australia";})
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); });
 
-      line2 = d3.line()
+      austria = d3.line()
         .defined(function(d) { return d.country == "Austria";})
+        .x(function(d) { return xScale(d.year); })
+        .y(function(d) { return yScale(d.percentage); });
+
+      brazil = d3.line()
+        .defined(function(d) { return d.country == "Brazil";})
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); });
 
@@ -53,12 +58,17 @@ function init() {
       svg.append("path")
         .datum(dataset)
         .attr("class", "line")
-        .attr("d", line);
+        .attr("d", australia);
 
       svg.append("path")
         .datum(dataset)
         .attr("class", "line2")
-        .attr("d", line2);
+        .attr("d", austria);
+
+      svg.append("path")
+        .datum(dataset)
+        .attr("class", "line3")
+        .attr("d", brazil);
 
       svg.append("g")
 				.attr("class", "axis")
