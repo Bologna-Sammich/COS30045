@@ -9,7 +9,7 @@ function init() {
 
     d3.csv("Simplified dataset.csv", function(d) {
       return {
-        year: d.TIME_PERIOD,
+        year: new Date(d.TIME_PERIOD),
         percentage: +d.OBS_VALUE,
         country: d.Reference_area
       };
@@ -34,11 +34,6 @@ function init() {
        yAxis = d3.axisLeft()
         .scale(yScale)
         .ticks(10);
-
-      // area = d3.area()
-      //   .x(function(d) { return xScale(d.date); })
-      //   .y0(function() { return yScale.range()[0]; })
-      //   .y1(function(d) { return yScale(d.number); })
 
       line = d3.line()
         .defined(function(d) { return d.country == "Australia";})
@@ -75,24 +70,6 @@ function init() {
 				.attr("transform", "translate(" + padding + ",0)")
 				.call(yAxis);
 
-        // svg.append("line")
-        //   .attr("class", "halfMilMark")
-        //   //start of line
-        //   .attr("x1", padding)
-        //   .attr("y1", yScale(500000))
-        //   //end of line
-        //   .attr("x2", w)
-        //   .attr("y2", yScale(500000))
-        //   .attr("stroke-dasharray", "5,5");
-        //
-        // svg.append("text")
-        //   .attr("class", "halfMilLabel")
-        //   .attr("x", padding + 10)
-        //   .attr("y", yScale(500000) - 7)
-        //   .attr("fill", "red")
-        //   .attr("font-weight", "bold")
-        //   .attr("font-family", "Arial")
-        //   .text("Half a million Unemployed");
     });
 
 
