@@ -7,7 +7,7 @@ function init() {
     var formatTime = d3.timeFormat("%Y");
     var dataset
 
-    d3.csv("../data/Simplified dataset.csv", function(d) {
+    d3.csv("data/Simplified dataset.csv", function(d) {
       return {
         year: new Date(d.TIME_PERIOD),
         percentage: +d.OBS_VALUE,
