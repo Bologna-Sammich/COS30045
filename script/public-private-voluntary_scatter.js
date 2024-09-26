@@ -1,13 +1,13 @@
 function init() {
-	var w = 800;
-	var h = 300;
+	var w = 1000;
+	var h = 600;
 	var padding = 50;
 	
 	var dataset, yScale, xScale, yAxis, xAxis;
 	
 	d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d) {
 		return {
-			year: new Date(d.TIME_PERIOD),
+			year: +d.TIME_PERIOD,
 			value: +d.OBS_VALUE,
 			country: d.REFERENCE_AREA
 		};
@@ -44,10 +44,10 @@ function init() {
 			.enter()
 			.append("circle")
 			.attr("cx", function(d) {
-				return d.value;
+				return d.year;
 			})
 			.attr("cy", function(d) {
-				return d.year;
+				return d.value;
 			})
 			.attr("r", 5)
 			.attr("fill", "green");
