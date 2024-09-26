@@ -30,7 +30,7 @@ function init() {
 		yAxis = d3.axisLeft()
 			.scale(yScale)
 			.ticks(10)
-			.ticksFormat(function(tickVal) {
+			.tickFormat(function(tickVal) {
 				return tickVal + "%";
 			});
 			
