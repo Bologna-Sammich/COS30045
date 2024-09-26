@@ -49,9 +49,9 @@ function init() {
 			.attr("cy", function(d, i) {
 				return d.value;
 			})
-			attr("r", 5)
+			.attr("r", 5)
 			.attr("fill", "green");
-	}
+	});
 }
 
 window.onload = init;
