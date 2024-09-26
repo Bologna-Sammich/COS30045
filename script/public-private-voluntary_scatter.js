@@ -44,10 +44,10 @@ function init() {
 			.enter()
 			.append("circle")
 			.attr("cx", function(d, i) {
-				return d.year;
+				return d.value;
 			})
 			.attr("cy", function(d, i) {
-				return d.value;
+				return d.year;
 			})
 			.attr("r", 5)
 			.attr("fill", "green");
