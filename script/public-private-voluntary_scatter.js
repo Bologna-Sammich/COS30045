@@ -43,10 +43,10 @@ function init() {
 			.data(dataset)
 			.enter()
 			.append("circle")
-			.attr("cx", function(d, i) {
+			.attr("cx", function(d) {
 				return d.value;
 			})
-			.attr("cy", function(d, i) {
+			.attr("cy", function(d) {
 				return d.year;
 			})
 			.attr("r", 5)
