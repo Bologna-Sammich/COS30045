@@ -12,7 +12,7 @@ function init() {
 			country: d.REFERENCE_AREA
 		};
 	}).then(function(dataset) {
-		xScale = d3.scaleTime()
+		xScale = d3.scaleLinear()
 			.domain([
 				d3.min(dataset, function(d) { return d.year; }),
 				d3.max(dataset, function(d) { return d.year; })
@@ -44,10 +44,10 @@ function init() {
 			.enter()
 			.append("circle")
 			.attr("cx", function(d) {
-				return d.year;
+				return xScale(d.year);
 			})
 			.attr("cy", function(d) {
-				return d.value;
+				return yScale(d.value);
 			})
 			.attr("r", 5)
 			.attr("fill", "green");
