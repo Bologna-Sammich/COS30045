@@ -20,7 +20,7 @@ function init() {
 			.range([padding, w]);
 			
 		yScale = d3.scaleLinear()
-			.domain([0, d3.max(dataset, function(d) { return d.value; })
+			.domain([0, d3.max(dataset, function(d) { return d.value; })])
 			.range([h - padding, 0]);
 			
 		xAxis = d3.axisBottom()
