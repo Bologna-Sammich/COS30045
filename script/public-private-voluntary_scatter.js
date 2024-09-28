@@ -39,18 +39,33 @@ function init() {
 			.attr("width", w)
 			.attr("height", h);
 			
-		svg.selectAll("circle")
+		svg.selectAll("rect")
 			.data(dataset)
 			.enter()
-			.append("circle")
-			.attr("cx", function(d) {
-				return xScale(d.year);
+			.append("rect")
+			.attr("x", function(d, i) {
+				return w - (d * 4);
 			})
-			.attr("cy", function(d) {
-				return yScale(d.value);
+			.attr("y", function(d, i) {
+				return i * (h / dataset.length);
 			})
-			.attr("r", 5)
+			.attr("height", function(d, i) {
+				return h / dataset.length - 4;
+			})
+			.attr("width", function(d) {
+				return d * 4;
+			})
 			.attr("fill", "green");
+			
+		svg.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(0," + (h - padding) + ")")
+				.call(xAxis);
+
+		svg.append("g")
+			.attr("class", "axis")
+			.attr("transform", "translate(" + padding + ",0)")
+			.call(yAxis);
 	});
 }
 
