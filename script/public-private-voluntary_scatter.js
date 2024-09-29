@@ -25,14 +25,15 @@ function init() {
 			
 		xAxis = d3.axisBottom()
 			.scale(xScale)
-			.ticks(15);
-			
-		yAxis = d3.axisLeft()
-			.scale(yScale)
 			.ticks(10)
 			.tickFormat(function(tickVal) {
 				return tickVal + "%";
 			});
+			
+		yAxis = d3.axisLeft()
+			.scale(yScale)
+			.ticks(4);
+			
 			
 		var svg = d3.select("#chart")
 			.append("svg")
