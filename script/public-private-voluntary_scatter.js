@@ -44,7 +44,7 @@ function init() {
 			.enter()
 			.append("rect")
 			.attr("x", function(d, i) {
-				return w - (d * 4);
+				return w - (i * 4);
 			})
 			.attr("y", function(d, i) {
 				return i * (h / dataset.length);
@@ -52,8 +52,8 @@ function init() {
 			.attr("height", function(d, i) {
 				return h / dataset.length - 4;
 			})
-			.attr("width", function(d) {
-				return d * 4;
+			.attr("width", function(d, i) {
+				return i * 4;
 			})
 			.attr("fill", "green");
 			
