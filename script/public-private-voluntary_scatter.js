@@ -1,7 +1,7 @@
 function init() {
 	var w = 1000;
 	var h = 600;
-	var padding = 50;
+	var padding = 60;
 	
 	var dataset, yScale, xScale, yAxis, xAxis;
 	
@@ -13,14 +13,15 @@ function init() {
 		};
 	}).then(function(dataset) {
 		xScale = d3.scaleLinear()
+			
+			.domain([0, d3.max(dataset, function(d) { return d.value; })])
+			.range([padding, w]);
+			
+		yScale = d3.scaleLinear()
 			.domain([
 				d3.min(dataset, function(d) { return d.year; }),
 				d3.max(dataset, function(d) { return d.year; })
 			])
-			.range([padding, w]);
-			
-		yScale = d3.scaleLinear()
-			.domain([0, d3.max(dataset, function(d) { return d.value; })])
 			.range([h - padding, 0]);
 			
 		xAxis = d3.axisBottom()
@@ -34,7 +35,9 @@ function init() {
 			.scale(yScale)
 			.ticks(4);
 			
-			
+		
+		console.table(dataset, ["TIME_PERIOD", "OBS_VALUE", "REFERENCE_AREA"]);
+		
 		var svg = d3.select("#chart")
 			.append("svg")
 			.attr("width", w)
