@@ -69,7 +69,7 @@ function init() {
         .datum(dataset)
         .attr("class", "line3")
         .attr("d", brazil)
-        .attr("fill", "blue");
+        .attr("stroke", "blue");
         // .on("mouseover", function(d) {
         //   d3.select(this)
         //     .attr("stroke", "orange");
