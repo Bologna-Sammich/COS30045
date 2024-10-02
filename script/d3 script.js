@@ -88,7 +88,7 @@ function init() {
             .attr("font-size", "11px")
             .attr("font-weight", "bold")
             .attr("fill", "black")
-            .text(d.country);
+            .text("this" + d.country);
         })
         .on("mouseout", function(d) {
           d3.select(this)
