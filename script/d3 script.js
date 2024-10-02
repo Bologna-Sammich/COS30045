@@ -97,7 +97,7 @@ function init() {
             .attr("font-weight", "bold")
             .attr("fill", "black")
             .text("Brazil")
-            .text(`Brazil\n ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
+            .text(`Brazil\br ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
         })
         .on("mouseout", function(d) {
           d3.select(this)
