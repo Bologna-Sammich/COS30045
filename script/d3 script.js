@@ -71,7 +71,7 @@ function init() {
         .attr("d", brazil)
         .attr("stroke", "blue")
         .attr("stroke-width", "3")
-        .attr("fill", "none");
+        .attr("fill", "none")
         .on("mouseover", function(d) {
           d3.select(this)
             .attr("stroke", "orange");
