@@ -94,7 +94,7 @@ function init() {
             .attr("stroke", "blue");
 
           d3.select("#tooltip").remove();
-        })
+        });
 
       svg.append("g")
 				.attr("class", "axis")
