@@ -71,30 +71,30 @@ function init() {
         .attr("d", brazil)
         .attr("stroke", "blue")
         .attr("stroke-width", "3")
-        .attr("fill", "none");
-        // .on("mouseover", function(d) {
-        //   d3.select(this)
-        //     .attr("stroke", "orange");
-        //
-        //   var xPosition = parseFloat(d3.select(this).attr('x'));
-        //   var yPosition = parseFloat(d3.select(this).attr('y'));
-        //   svg.append("text")
-        //     .attr("id", "tooltip")
-        //     .attr("x", xPosition)
-        //     .attr("y", yPosition)
-        //     .attr("text-anchor", "middle")
-        //     .attr("font-family", "sans-serif")
-        //     .attr("font-size", "11px")
-        //     .attr("font-weight", "bold")
-        //     .attr("fill", "black")
-        //     .text(d.country);
-        // })
-        // .on("mouseout", function(d) {
-        //   d3.select(this)
-        //     .attr("stroke", "blue");
-        //
-        //   d3.select("#tooltip").remove();
-        // });
+        .attr("fill", "none")
+        .on("mouseover", function(d) {
+          d3.select(this)
+            .attr("stroke", "orange");
+
+          var xPosition = parseFloat(d3.select(this).attr('x'));
+          var yPosition = parseFloat(d3.select(this).attr('y'));
+          svg.append("text")
+            .attr("id", "tooltip")
+            .attr("x", xPosition)
+            .attr("y", yPosition)
+            .attr("text-anchor", "middle")
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "11px")
+            .attr("font-weight", "bold")
+            .attr("fill", "black")
+            .text(d.country);
+        })
+        .on("mouseout", function(d) {
+          d3.select(this)
+            .attr("stroke", "blue");
+
+          d3.select("#tooltip").remove();
+        });
 
       svg.append("g")
 				.attr("class", "axis")
