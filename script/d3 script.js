@@ -72,16 +72,17 @@ function init() {
         .attr("stroke", "blue")
         .attr("stroke-width", "3")
         .attr("fill", "none")
-        .on("mouseover", function(d) {
+        .on("mouseover", function(d, event) {
           d3.select(this)
             .attr("stroke", "orange");
 
-          var xPosition = parseFloat(d3.select(this).attr('x'));
-          var yPosition = parseFloat(d3.select(this).attr('y'));
+          var mouseCoords = d3.pointer(event);
+          var xPosition = mouseCoords[0];
+          var yPosition = mouseCoords[1];
           svg.append("text")
             .attr("id", "tooltip")
             .attr("x", xPosition)
-            .attr("y", yPosition)
+            .attr("y", yPosition - 10)
             .attr("text-anchor", "middle")
             .attr("font-family", "sans-serif")
             .attr("font-size", "11px")
