@@ -72,14 +72,14 @@ function init() {
         .attr("stroke", "blue")
         .attr("stroke-width", "1")
         .attr("fill", "none");
-        // .on("mouseover", function(d) {
-        //   d3.select(this)
-        //     .attr("stroke", "orange");
-        // })
-        // .on("mouseout", function(d) {
-        //   d3.select(this)
-        //     .attr("stroke", "blue");
-        // })
+        .on("mouseover", function(d) {
+          d3.select(this)
+            .attr("stroke", "orange");
+        })
+        .on("mouseout", function(d) {
+          d3.select(this)
+            .attr("stroke", "blue");
+        })
 
       svg.append("g")
 				.attr("class", "axis")
