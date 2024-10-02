@@ -72,7 +72,7 @@ function init() {
         .attr("stroke", "blue")
         .attr("stroke-width", "3")
         .attr("fill", "none")
-        .on("mouseover", function(d, event) {
+        .on("mouseover", function(event, d) {
           d3.select(this)
             .attr("stroke", "orange");
 
@@ -88,7 +88,7 @@ function init() {
             .attr("font-size", "11px")
             .attr("font-weight", "bold")
             .attr("fill", "black")
-            .text("this" + d.country);
+            .text("Brazil");
         })
         .on("mouseout", function(d) {
           d3.select(this)
