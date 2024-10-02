@@ -77,18 +77,26 @@ function init() {
             .attr("stroke", "orange");
 
           var mouseCoords = d3.pointer(event);
-          var xPosition = mouseCoords[0];
-          var yPosition = mouseCoords[1];
+          // var xPosition = mouseCoords[0];
+          // var yPosition = mouseCoords[1];
+          var xDate = xScale.invert(xPosition);
+
+          // Find closest data point for Brazil
+          var brazilData = dataset.filter(function(d) { return d.country == "Brazil"; });
+          var closestPoint = brazilData.reduce(function(prev, curr) {
+            return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
+          });
+
           svg.append("text")
             .attr("id", "tooltip")
-            .attr("x", xPosition)
-            .attr("y", yPosition - 10)
+            .attr("x", xScale(closestPoint.year))
+            .attr("y", yScale(closestPoint.percentage) - 10)
             .attr("text-anchor", "middle")
             .attr("font-family", "sans-serif")
             .attr("font-size", "11px")
             .attr("font-weight", "bold")
             .attr("fill", "black")
-            .text("Brazil");
+            .text(`${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
         })
         .on("mouseout", function(d) {
           d3.select(this)
