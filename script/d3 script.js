@@ -76,11 +76,10 @@ function init() {
           d3.select(this)
             .attr("stroke", "orange");
         })
-
-      .on("mouseout", function(d) {
-        d3.select(this)
-          .attr("stroke", "blue");
-      })
+        .on("mouseout", function(d) {
+          d3.select(this)
+            .attr("stroke", "blue");
+        })
 
       svg.append("g")
 				.attr("class", "axis")
