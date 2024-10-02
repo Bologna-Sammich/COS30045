@@ -77,7 +77,7 @@ function init() {
             .attr("stroke", "orange");
 
           var mouseCoords = d3.pointer(event);
-          // var xPosition = mouseCoords[0];
+          var xPosition = mouseCoords[0];
           // var yPosition = mouseCoords[1];
           var xDate = xScale.invert(xPosition);
 
