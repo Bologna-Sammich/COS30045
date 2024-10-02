@@ -90,12 +90,13 @@ function init() {
           svg.append("text")
             .attr("id", "tooltip")
             .attr("x", xScale(closestPoint.year))
-            .attr("y", yScale(closestPoint.percentage) - 10)
+            .attr("y", yScale(closestPoint.percentage) - 15)
             .attr("text-anchor", "middle")
             .attr("font-family", "sans-serif")
             .attr("font-size", "11px")
             .attr("font-weight", "bold")
             .attr("fill", "black")
+            .text("Brazil")
             .text(`${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
         })
         .on("mouseout", function(d) {
