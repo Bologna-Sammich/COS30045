@@ -18,9 +18,9 @@ function init() {
     }).then(function(dataset) {
 
       var filteredData = dataset.filter(d =>
-        d.insuranceType === "TPRIBASI" &&
-        d.unitMeasure === "Percentage of population" &&
-        d.percentage > 0
+        d.insuranceType === "TPRIBASI"
+        // d.unitMeasure === "Percentage of population" &&
+        // d.percentage > 0
       );
 
     console.log(filteredData);
