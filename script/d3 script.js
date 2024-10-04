@@ -17,18 +17,25 @@ function init() {
       };
     }).then(function(dataset) {
 
-      var filteredData = dataset.filter(function(d) {
+      var filteredData = dataset.filter(d =>
       return d.insuranceType === "TPRIBASI" &&
              d.unitMeasure === "Percentage of population" &&
-             d.percentage > 0;
-    });
+             d.percentage > 0
+    );
+
+    console.log(filteredData);
+
+    if (filteredData.length === 0) {
+           console.error("No data available after filtering.");
+           return; // Exit if no data is available
+       }
 
       xScale = d3.scaleTime()
        .domain([
-        d3.min(filteredData, function(d) { return d.year; }),
-        d3.max(filteredData, function(d) { return d.year; })
+        d3.min(filteredData, d => d.year),
+        d3.max(filteredData, d => d.year)
       ])
-       .range([padding, w]);
+       .range([padding, w - padding ]);
 
       yScale = d3.scaleLinear()
         .domain([0, 110])
@@ -52,13 +59,13 @@ function init() {
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); });
 
-      var countries = Array.from(new Set(filteredData.map(function(d) { return d.country; })));
+      var countries = Array.from(new Set(filteredData.map(d => d.country )));
 
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       countries.forEach(function(country, i) {
 
-        var countryData = filteredData.filter(function(d) { return d.country === country; });
+        var countryData = filteredData.filter(d => d.country === country; });
 
         svg.append("path")
           .datum(countryData)
@@ -102,12 +109,12 @@ function init() {
 
       svg.append("g")
 				.attr("class", "axis")
-				.attr("transform", "translate(0," + (h - padding) + ")")
+				.attr("transform", `translate(0, ${h - padding}`)
 				.call(xAxis);
 
 			svg.append("g")
 				.attr("class", "axis")
-				.attr("transform", "translate(" + padding + ",0)")
+				.attr("transform", `translate(${padding}, 0)`)
 				.call(yAxis);
 
     });
