@@ -80,7 +80,7 @@ function init() {
               .attr("font-size", "11px")
               .attr("font-weight", "bold")
               .attr("fill", "black")
-              .text(`Brazil ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
+              .text(`${country} ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
           })
           .on("mouseout", function(d) {
             d3.select(this)
