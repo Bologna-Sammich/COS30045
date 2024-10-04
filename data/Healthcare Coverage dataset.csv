@@ -1,4 +1,4 @@
-﻿REF_AREA,Reference area,Frequency of observation,Measure,Unit of measure,INSURANCE_TYPE,Insurance type,TIME_PERIOD,OBS_VALUE,OBS_STATUS,Observation status,UNIT_MULT,Unit multiplier,DECIMALS,Decimals
+﻿REF_AREA,Reference_area,Frequency of observation,Measure,Unit_of_measure,INSURANCE_TYPE,Insurance_type,TIME_PERIOD,OBS_VALUE,OBS_STATUS,Observation status,UNIT_MULT,Unit multiplier,DECIMALS,Decimals
 AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINPMPI,Primary voluntary health insurance,1995,0,A,Normal value,0,Units,,
 AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINPMPI,Primary voluntary health insurance,1996,0,A,Normal value,0,Units,,
 AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINPMPI,Primary voluntary health insurance,1997,0,A,Normal value,0,Units,,
