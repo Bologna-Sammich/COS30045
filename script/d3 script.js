@@ -66,7 +66,7 @@ function init() {
             var xDate = xScale.invert(xPosition);
 
             // Find closest data point for Brazil
-            var brazilData = dataset.filter(function(d) { return d.country == "Brazil"; });
+            var brazilData = dataset.filter(function(d) { return d.country == country; });
             var closestPoint = brazilData.reduce(function(prev, curr) {
               return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
             });
