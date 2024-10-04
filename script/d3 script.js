@@ -17,7 +17,7 @@ function init() {
       };
     }).then(function(dataset) {
 
-      var filteredData = newDataset.filter(function(d) {
+      var filteredData = dataset.filter(function(d) {
       return d.insuranceType === "Total voluntary health insurance" &&
              d.unitMeasure === "Percentage of population";
     });
