@@ -18,12 +18,14 @@ function init() {
     }).then(function(dataset) {
 
       var filteredData = dataset.filter(d =>
-        d.insuranceType === "TPRIBASI"
+        d.insuranceType === "Total voluntary health insurance"
         // d.unitMeasure === "Percentage of population" &&
         // d.percentage > 0
       );
 
     console.log(dataset);
+
+    console.log("Filtered Data:", filteredData);
 
     const uniqueInsuranceTypes = Array.from(new Set(dataset.map(d => d.insuranceType)));
         console.log("Unique Insurance Types:", uniqueInsuranceTypes);
