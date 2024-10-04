@@ -23,7 +23,7 @@ function init() {
         // d.percentage > 0
       );
 
-    console.log(filteredData);
+    console.log(dataset);
 
     if (filteredData.length === 0) {
            console.error("No data available after filtering.");
