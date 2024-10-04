@@ -35,75 +35,88 @@ function init() {
         .scale(yScale)
         .ticks(10);
 
-      australia = d3.line()
-        .defined(function(d) { return d.country == "Australia";})
-        .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); });
-
-      austria = d3.line()
-        .defined(function(d) { return d.country == "Austria";})
-        .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); });
-
-      brazil = d3.line()
-        .defined(function(d) { return d.country == "Brazil";})
-        .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); });
-
       var svg = d3.select("#chart")
         .append("svg")
         .attr("width", w)
         .attr("height", h);
 
-      svg.append("path")
-        .datum(dataset)
-        .attr("class", "line")
-        .attr("d", australia);
+      var line = d3.line()
+        .x(function(d) { return xScale(d.year); })
+        .y(function(d) { return yScale(d.percentage); });
 
-      svg.append("path")
-        .datum(dataset)
-        .attr("class", "line2")
-        .attr("d", austria);
+      var countries = ["Australia", "Austria", "Brazil"];
 
-      svg.append("path")
-        .datum(dataset)
-        .attr("class", "line3")
-        .attr("d", brazil)
-        .attr("stroke", "blue")
-        .attr("stroke-width", "3")
-        .attr("fill", "none")
-        .on("mouseover", function(event, d) {
-          d3.select(this)
-            .attr("stroke", "orange");
+      var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-          var mouseCoords = d3.pointer(event);
-          var xPosition = mouseCoords[0];
-          // var yPosition = mouseCoords[1];
-          var xDate = xScale.invert(xPosition);
+      countries.foreach(function(country, i) {
+        svg.append("path")
+          .datum(dataset.filter(function(d) {return d.country === country; }))
+          .attr("class", `line country-${i}`)
+          .attr("d", line)
+          .attr("stroke", colorScale(country))
+          .attr("stroke-width", "3")
+          .attr("fill", "none")
+          .on("mouseover", function(event, d) {
+            d3.select(this)
+              .attr("stroke", "orange");
 
-          // Find closest data point for Brazil
-          var brazilData = dataset.filter(function(d) { return d.country == "Brazil"; });
-          var closestPoint = brazilData.reduce(function(prev, curr) {
-            return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
+            var mouseCoords = d3.pointer(event);
+            var xPosition = mouseCoords[0];
+            // var yPosition = mouseCoords[1];
+            var xDate = xScale.invert(xPosition);
+
+            // Find closest data point for Brazil
+            var brazilData = dataset.filter(function(d) { return d.country == "Brazil"; });
+            var closestPoint = brazilData.reduce(function(prev, curr) {
+              return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
+            });
+
+            svg.append("text")
+              .attr("id", "tooltip")
+              .attr("x", xScale(closestPoint.year))
+              .attr("y", yScale(closestPoint.percentage) - 15)
+              .attr("text-anchor", "middle")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "11px")
+              .attr("font-weight", "bold")
+              .attr("fill", "black")
+              .text(`Brazil ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
+          })
+          .on("mouseout", function(d) {
+            d3.select(this)
+              .attr("stroke", colorScale(country));
+            d3.select("#tooltip").remove();
           });
+      })
 
-          svg.append("text")
-            .attr("id", "tooltip")
-            .attr("x", xScale(closestPoint.year))
-            .attr("y", yScale(closestPoint.percentage) - 15)
-            .attr("text-anchor", "middle")
-            .attr("font-family", "sans-serif")
-            .attr("font-size", "11px")
-            .attr("font-weight", "bold")
-            .attr("fill", "black")
-            .text(`Brazil ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
-        })
-        .on("mouseout", function(d) {
-          d3.select(this)
-            .attr("stroke", "blue");
+      // australia = d3.line()
+      //   .defined(function(d) { return d.country == "Australia";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
+      // austria = d3.line()
+      //   .defined(function(d) { return d.country == "Austria";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
+      // brazil = d3.line()
+      //   .defined(function(d) { return d.country == "Brazil";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
 
-          d3.select("#tooltip").remove();
-        });
+      //
+      // svg.append("path")
+      //   .datum(dataset)
+      //   .attr("class", "line")
+      //   .attr("d", australia);
+      //
+      // svg.append("path")
+      //   .datum(dataset)
+      //   .attr("class", "line2")
+      //   .attr("d", austria);
+
+
 
       svg.append("g")
 				.attr("class", "axis")
