@@ -1,0 +1,711 @@
+﻿REF_AREA,Reference_area,Frequency of observation,Measure,Unit_of_measure,INSURANCE_TYPE,Insurance_types,TIME_PERIOD,OBS_VALUE,OBS_STATUS,Observation status,UNIT_MULT,Unit multiplier
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,34.9,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,33.7,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,32.1,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,39.3,B,Time series break,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,39.4,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,49.9,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,51,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,50.7,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,50.1,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,49.7,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,49.6,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,49.8,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,50.5,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,51.5,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,51.9,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,52.5,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,53.3,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,54.2,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,54.8,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,55.4,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,55.8,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,55.5,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,54.9,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,54.3,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,53.7,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,53.1,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,54.4,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,54.9,A,Normal value,0,Units
+AUS,Australia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,54.8,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,34.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,33.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,33.4,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,33,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,31.7,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,31.8,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,31.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,31.6,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,31.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,31,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,33.5,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,33.5,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,33.7,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,33.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,33.8,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,33.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,34.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,34.5,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,35.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,35.7,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,36.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,36.5,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,36.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,37.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,37.8,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,37.9,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,38.2,A,Normal value,0,Units
+AUT,Austria,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,38.1,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,33.6,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,36.4,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,37.1,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,37.8,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,40.6,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,63.8,B,Time series break,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,70.1,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,71.8,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,73.6,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,76.3,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,77.3,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,76.3,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,78.9,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,78.9,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,79.7,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,80.4,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,82.2,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,97.8,A,Normal value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,97.9,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,97.8,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,97.8,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,97.7,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,97.6,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,97.5,E,Estimated value,0,Units
+BEL,Belgium,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,97.4,E,Estimated value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,18.2,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,18.2,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,18.1,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,18.1,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,18.6,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,19.2,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,19.9,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,20.8,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,21.9,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,21.6,B,Time series break,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,22.3,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,23.4,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,23.8,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,24.7,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,25.6,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,25.8,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,25,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,24.4,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,24.2,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,24.1,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,24.2,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,24.6,A,Normal value,0,Units
+BRA,Brazil,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,25.3,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,55,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,56,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,57,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,59,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,63,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,65,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,65,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,66,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,66,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,66,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,66,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,67,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,68,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,69,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,69,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,69,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,69,A,Normal value,0,Units
+CAN,Canada,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,69,P,Provisional value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,5.6,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,6.1,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,4.8,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,4.8,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,5.7,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,4.2,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,7.8,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,6.9,A,Normal value,0,Units
+COL,Colombia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,8.2,A,Normal value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,0.2,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,0,E,Estimated value,0,Units
+CZE,Czechia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,0,E,Estimated value,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,0.8,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,2.6,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,4.3,A,Normal value,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,5.3,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,7.9,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,10.4,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,14.3,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,19.2,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,20,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,21.6,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,24.1,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,27.1,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,28.8,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,31.7,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,32,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,32.6,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,33.6,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,34.9,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,36.9,A,Normal value,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,39.3,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,39.3,D,Definition differs,0,Units
+DNK,Denmark,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,45.3,D,Definition differs,0,Units
+EST,Estonia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0.5,A,Normal value,0,Units
+EST,Estonia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,1,A,Normal value,0,Units
+EST,Estonia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,2.3,A,Normal value,0,Units
+EST,Estonia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,3.6,A,Normal value,0,Units
+EST,Estonia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,4.1,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,9.5,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,10.1,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,10.6,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,11,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,11.5,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,11.8,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,11.6,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,11.4,D,Definition differs,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,15.3,B,Time series break,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,16.1,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,16.4,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,17.1,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,17.8,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,18.3,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,20.2,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,21,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,21,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,21.9,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,22.4,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,22.8,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,23.1,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,23.2,A,Normal value,0,Units
+FIN,Finland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,23.2,E,Estimated value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,83.4,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,83.6,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,84.5,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,84,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,85.8,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,87.4,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,87.3,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,91.6,B,Time series break,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,93.7,B,Time series break,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,95.8,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,95,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,95.5,A,Normal value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,96.1,E,Estimated value,0,Units
+FRA,France,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,96.4,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,8.5,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,8.5,B,Time series break,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,8.7,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,8.8,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,9,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,9.2,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,9.5,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,9.7,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,9.9,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,10.1,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,24.7,B,Time series break,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,26.5,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,28.3,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,29.8,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,20,A,Normal value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,20.6,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,21.4,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,21.8,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,22.4,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,22.9,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,23.1,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,23.2,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,23.7,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,24.2,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,24.9,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,25.8,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,26.7,E,Estimated value,0,Units
+DEU,Germany,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,27.3,E,Estimated value,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,12.8,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,12.4,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,12.5,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,12.5,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,11.5,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,12,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,11.9,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,12.2,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,13.6,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,15.3,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,16,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,17.2,D,Definition differs,0,Units
+GRC,Greece,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,19,D,Definition differs,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,0,E,Estimated value,0,Units
+HUN,Hungary,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,0,E,Estimated value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,0.5,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,0.3,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,0.4,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,0.1,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,0.2,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,0.3,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,0.4,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,0.5,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,0.4,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0.4,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,0.4,A,Normal value,0,Units
+ISL,Iceland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,0.4,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,37.9,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,38.4,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,39.2,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,40.5,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,41.9,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,43.8,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,48.6,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,49.6,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,50.2,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,50.8,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,51.2,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,51.3,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,51.7,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,52,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,50.7,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,49.8,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,47.3,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,45.7,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,44.4,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,43.6,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,45.3,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,45.4,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,45.4,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,45.7,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,46.3,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,46.2,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,47,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,47.6,A,Normal value,0,Units
+IRL,Ireland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,46.8,P,Provisional value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,41.7,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,44.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,54.3,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,64.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,70.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,72.2,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,74.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,75.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,77.2,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,79,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,78.9,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,79.7,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,80.7,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,80.6,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,80,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,80.3,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,82.9,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,83.9,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,83.4,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,83.1,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,83.2,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,84.1,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,83.9,B,Time series break,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,84.3,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,86.2,A,Normal value,0,Units
+ISR,Israel,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,88,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,48,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,51.1,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,56.5,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,61,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,63.2,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,66.8,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,67.8,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,67.7,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,70,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,70.8,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,72.2,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,72.2,A,Normal value,0,Units
+KOR,Korea,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,72.6,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,17.2,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,14,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,8.9,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,9.1,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,8.1,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,12.7,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,13.9,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,14.2,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,14.6,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,16,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,18.2,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,18.9,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,20.3,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,22,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,23.8,A,Normal value,0,Units
+LVA,Latvia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,24.6,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,1.5,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,1.5,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,1.3,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,1.8,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,2.7,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,3.7,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,4.8,A,Normal value,0,Units
+LTU,Lithuania,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,1.4,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,2.8,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,3.1,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,3.5,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,3.8,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,4,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,5,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,5.3,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,5.8,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,5.7,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,6,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,6.1,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,7.2,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,7.5,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,7.4,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,8.1,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,8.2,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,9.1,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,9.6,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,9.9,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,9.9,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,10.4,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,11,A,Normal value,0,Units
+MEX,Mexico,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,12.2,A,Normal value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,92.9,A,Normal value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,92.7,A,Normal value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,92.8,A,Normal value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,92.5,A,Normal value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,92.6,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,91.6,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,89.6,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,88.7,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,88.9,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,87.7,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,85.5,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,84.4,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,84,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,84.2,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,84,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,83.5,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,83.6,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,83.1,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,84.8,E,Estimated value,0,Units
+NLD,Netherlands,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,83.4,E,Estimated value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,32.8,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,32.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,34.1,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,33.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,32.1,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,31.9,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,32.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,32.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,32.5,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,32.7,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,32.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,32.1,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,31.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,30.9,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,30.5,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,29.8,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,29.3,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,28.8,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,28.7,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,28.6,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,28.8,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,28,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,27.8,A,Normal value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,28.1,E,Estimated value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,28.6,E,Estimated value,0,Units
+NZL,New Zealand,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2023,28.3,E,Estimated value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,0,A,Normal value,0,Units
+POL,Poland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,0,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,13.8,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,13.7,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,12.2,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,16.4,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,16.8,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,17.5,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,16.4,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,18,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,18.5,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,19.2,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,19.8,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,19.8,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,20.2,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,20.9,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,22.2,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,25.6,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,26,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,26.5,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,25.9,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,27.9,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,29.3,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,31.9,A,Normal value,0,Units
+PRT,Portugal,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,33.7,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,0,A,Normal value,0,Units
+SVK,Slovak Republic,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,0,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,68.9,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,69.5,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,70.1,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,70.7,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,71.4,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,72.5,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,73.6,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,74.7,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,75,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,75.2,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,74.4,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,73.2,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,72.9,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,72.8,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,73.2,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,77.1,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,87.1,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,85,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,84.5,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,87.8,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,87,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,87.4,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,89.8,A,Normal value,0,Units
+SVN,Slovenia,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,93.5,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,17.2,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,16.6,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,16.2,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,16.2,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,15.7,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,15.3,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,15,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,14.8,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,14.5,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,14.9,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,15.8,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,15.8,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,16.4,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,16.6,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,16.5,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,16.6,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,16.6,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,16.3,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,15.8,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,15.7,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,15.1,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,15.4,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,15.1,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,14.8,A,Normal value,0,Units
+ZAF,South Africa,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,14.9,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,9.1,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,8.6,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,7.6,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,11.9,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,14.4,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,13.3,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,15.6,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,16.3,A,Normal value,0,Units
+ESP,Spain,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,15.3,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,38.5,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,32.5,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,29.5,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,27.9,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,28.5,A,Normal value,0,Units
+CHE,Switzerland,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,28.1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,0.2,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,0.3,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,0.4,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,1.1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,1.3,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,1.2,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,1.4,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,1.8,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,2.5,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,3.1,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,2.5,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,2.8,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,4.6,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,5.5,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,5.6,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,5.8,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,5.4,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,7.6,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,6.7,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,8.3,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,9,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,7.6,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,9.5,A,Normal value,0,Units
+TUR,Turkey,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,12.1,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1995,11.9,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1996,12.1,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,12.2,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,12.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,12.2,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,12.8,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,12.6,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,12.8,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,12.7,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,12.6,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,12.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,12.2,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,12.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,12.3,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,11.7,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,11.2,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,10.9,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,10.8,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,10.6,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,10.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,10.5,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,10.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,10.3,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,10.2,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,10.4,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,10.3,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,10.8,A,Normal value,0,Units
+GBR,United Kingdom,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,10.9,E,Estimated value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1997,70.5,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1998,71.5,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,1999,71.8,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2000,70.7,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2001,70.4,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2002,68.6,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2003,68.2,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2004,67.7,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2005,67.1,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2006,65.2,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2007,65.5,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2008,64.4,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2009,62.3,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2010,60.6,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2011,60.6,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2012,60.3,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2013,60.1,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2014,61.6,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2015,62.9,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2016,63,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2017,62.9,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2018,62.7,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2019,62,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2020,62,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2021,62.4,A,Normal value,0,Units
+USA,United States,Annual,Health insurance coverage,Percentage of population,PHINTPHI,Total voluntary health insurance,2022,60.8,A,Normal value,0,Units
