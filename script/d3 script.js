@@ -30,6 +30,9 @@ function init() {
     const uniqueInsuranceTypes = Array.from(new Set(dataset.map(d => d.insuranceType)));
         console.log("Unique Insurance Types:", uniqueInsuranceTypes);
 
+    const percentageValues = dataset.map(d => d.percentage);
+        console.log("Percentage Values:", percentageValues);
+
     if (filteredData.length === 0) {
            console.error("No data available after filtering.");
            return; // Exit if no data is available
