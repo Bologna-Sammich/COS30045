@@ -25,12 +25,12 @@ function init() {
       xScale = d3.scaleTime()
        .domain([
         d3.min(dataset, function(d) { return d.year; }),
-        d3.max(dataset, function(d) { return d.year + 10; })
+        d3.max(dataset, function(d) { return d.year; })
       ])
        .range([padding, w]);
 
       yScale = d3.scaleLinear()
-        .domain([0, d3.max(dataset, function(d) { return d.percentage + 10; })])
+        .domain([0, d3.max(dataset, function(d) { return d.percentage; })])
         .range([h - padding, 0]);
 
       xAxis = d3.axisBottom()
