@@ -7,18 +7,25 @@ function init() {
     var formatTime = d3.timeFormat("%Y");
     var dataset
 
-    d3.csv("data/Simplified dataset.csv", function(d) {
+    d3.csv("data/Healthcare Coverage dataset.csv", function(d) {
       return {
         year: new Date(d.TIME_PERIOD),
         percentage: +d.OBS_VALUE,
+        insuranceType: d.Insurance_type,
+        unitMeasure: d.Unit_of_measure,
         country: d.Reference_area
       };
     }).then(function(dataset) {
 
+      var filteredData = newDataset.filter(function(d) {
+      return d.insuranceType === "Total voluntary health insurance" &&
+             d.unitMeasure === "Percentage of population";
+    });
+
       xScale = d3.scaleTime()
        .domain([
         d3.min(dataset, function(d) { return d.year; }),
-        d3.max(dataset, function(d) { return d.year; })
+        d3.max(dataset, function(d) { return d.year + 10; })
       ])
        .range([padding, w]);
 
@@ -44,13 +51,16 @@ function init() {
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); });
 
-      var countries = ["Australia", "Austria", "Brazil"];
+      var countries = Array.from(new Set(filteredData.map(function(d) { return d.country; })));
 
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       countries.forEach(function(country, i) {
+
+        var countryData = filteredData.filter(function(d) { return d.country === country; });
+
         svg.append("path")
-          .datum(dataset.filter(function(d) {return d.country === country; }))
+          .datum(countryData)
           .attr("class", `line country-${i}`)
           .attr("d", line)
           .attr("stroke", colorScale(country))
@@ -66,7 +76,6 @@ function init() {
             var xDate = xScale.invert(xPosition);
 
             // Find closest data point for Brazil
-            var countryData = dataset.filter(function(d) { return d.country == country; });
             var closestPoint = d.reduce(function(prev, curr) {
               return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
             });
@@ -88,34 +97,6 @@ function init() {
             d3.select("#tooltip").remove();
           });
       })
-
-      // australia = d3.line()
-      //   .defined(function(d) { return d.country == "Australia";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-      // austria = d3.line()
-      //   .defined(function(d) { return d.country == "Austria";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-      // brazil = d3.line()
-      //   .defined(function(d) { return d.country == "Brazil";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-
-      //
-      // svg.append("path")
-      //   .datum(dataset)
-      //   .attr("class", "line")
-      //   .attr("d", australia);
-      //
-      // svg.append("path")
-      //   .datum(dataset)
-      //   .attr("class", "line2")
-      //   .attr("d", austria);
-
 
 
       svg.append("g")
