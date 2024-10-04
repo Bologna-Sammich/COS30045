@@ -1,7 +1,7 @@
 function init() {
 
     var w = 800;
-    var h = 300;
+    var h = 500;
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
