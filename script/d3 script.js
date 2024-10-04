@@ -54,7 +54,7 @@ function init() {
           .attr("class", `line country-${i}`)
           .attr("d", line)
           .attr("stroke", colorScale(country))
-          .attr("stroke-width", "3")
+          .attr("stroke-width", "2")
           .attr("fill", "none")
           .on("mouseover", function(event, d) {
             d3.select(this)
