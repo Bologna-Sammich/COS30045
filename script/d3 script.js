@@ -64,8 +64,7 @@ function init() {
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       countries.forEach(function(country, i) {
-
-        var countryData = filteredData.filter(d => d.country === country; });
+        var countryData = filteredData.filter(d => d.country === country );
 
         svg.append("path")
           .datum(countryData)
