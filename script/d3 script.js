@@ -48,7 +48,7 @@ function init() {
 
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-      countries.foreach(function(country, i) {
+      countries.forEach(function(country, i) {
         svg.append("path")
           .datum(dataset.filter(function(d) {return d.country === country; }))
           .attr("class", `line country-${i}`)
