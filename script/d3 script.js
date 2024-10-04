@@ -19,18 +19,19 @@ function init() {
 
       var filteredData = dataset.filter(function(d) {
       return d.insuranceType === "TPRIBASI" &&
-             d.unitMeasure === "Percentage of population";
+             d.unitMeasure === "Percentage of population" &&
+             d.percentage > 0;
     });
 
       xScale = d3.scaleTime()
        .domain([
-        d3.min(dataset, function(d) { return d.year; }),
-        d3.max(dataset, function(d) { return d.year; })
+        d3.min(filteredData, function(d) { return d.year; }),
+        d3.max(filteredData, function(d) { return d.year; })
       ])
        .range([padding, w]);
 
       yScale = d3.scaleLinear()
-        .domain([0, d3.max(dataset, function(d) { return d.percentage; })])
+        .domain([0, 110])
         .range([h - padding, 0]);
 
       xAxis = d3.axisBottom()
