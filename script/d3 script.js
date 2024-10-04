@@ -7,46 +7,23 @@ function init() {
     var formatTime = d3.timeFormat("%Y");
     var dataset
 
-    d3.csv("data/Healthcare Coverage dataset.csv", function(d) {
+    d3.csv("data/Healthcare Coverage total vol.csv", function(d) {
       return {
         year: new Date(d.TIME_PERIOD),
         percentage: +d.OBS_VALUE,
-        insuranceType: d.Insurance_type,
-        unitMeasure: d.Unit_of_measure,
         country: d.Reference_area
       };
     }).then(function(dataset) {
 
-      var filteredData = dataset.filter(d =>
-        d.insuranceType === "Total voluntary health insurance"
-        // d.unitMeasure === "Percentage of population" &&
-        // d.percentage > 0
-      );
-
-    console.log(dataset);
-
-    console.log("Filtered Data:", filteredData);
-
-    const uniqueInsuranceTypes = Array.from(new Set(dataset.map(d => d.insuranceType)));
-        console.log("Unique Insurance Types:", uniqueInsuranceTypes);
-
-    const percentageValues = dataset.map(d => d.percentage);
-        console.log("Percentage Values:", percentageValues);
-
-    if (filteredData.length === 0) {
-           console.error("No data available after filtering.");
-           return; // Exit if no data is available
-       }
-
       xScale = d3.scaleTime()
        .domain([
-        d3.min(filteredData, d => d.year),
-        d3.max(filteredData, d => d.year)
+        d3.min(dataset, function(d) { return d.year; }),
+        d3.max(dataset, function(d) { return d.year; })
       ])
-       .range([padding, w - padding ]);
+       .range([padding, w]);
 
       yScale = d3.scaleLinear()
-        .domain([0, 110])
+        .domain([0, d3.max(dataset, function(d) { return d.percentage + 10; })])
         .range([h - padding, 0]);
 
       xAxis = d3.axisBottom()
@@ -67,15 +44,13 @@ function init() {
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); });
 
-      var countries = Array.from(new Set(filteredData.map(d => d.country )));
+      var countries = Array.from(dataset.map(d => d.country))
 
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       countries.forEach(function(country, i) {
-        var countryData = filteredData.filter(d => d.country === country );
-
         svg.append("path")
-          .datum(countryData)
+          .datum(dataset.filter(function(d) {return d.country === country; }))
           .attr("class", `line country-${i}`)
           .attr("d", line)
           .attr("stroke", colorScale(country))
@@ -91,6 +66,7 @@ function init() {
             var xDate = xScale.invert(xPosition);
 
             // Find closest data point for Brazil
+            var countryData = dataset.filter(function(d) { return d.country == country; });
             var closestPoint = d.reduce(function(prev, curr) {
               return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
             });
@@ -113,15 +89,43 @@ function init() {
           });
       })
 
+      // australia = d3.line()
+      //   .defined(function(d) { return d.country == "Australia";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
+      // austria = d3.line()
+      //   .defined(function(d) { return d.country == "Austria";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
+      // brazil = d3.line()
+      //   .defined(function(d) { return d.country == "Brazil";})
+      //   .x(function(d) { return xScale(d.year); })
+      //   .y(function(d) { return yScale(d.percentage); });
+      //
+
+      //
+      // svg.append("path")
+      //   .datum(dataset)
+      //   .attr("class", "line")
+      //   .attr("d", australia);
+      //
+      // svg.append("path")
+      //   .datum(dataset)
+      //   .attr("class", "line2")
+      //   .attr("d", austria);
+
+
 
       svg.append("g")
 				.attr("class", "axis")
-				.attr("transform", `translate(0, ${h - padding}`)
+				.attr("transform", "translate(0," + (h - padding) + ")")
 				.call(xAxis);
 
 			svg.append("g")
 				.attr("class", "axis")
-				.attr("transform", `translate(${padding}, 0)`)
+				.attr("transform", "translate(" + padding + ",0)")
 				.call(yAxis);
 
     });
