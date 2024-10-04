@@ -18,7 +18,7 @@ function init() {
     }).then(function(dataset) {
 
       var filteredData = dataset.filter(function(d) {
-      return d.insuranceType === "Total voluntary health insurance" &&
+      return d.insuranceType === "TPRIBASI" &&
              d.unitMeasure === "Percentage of population";
     });
 
