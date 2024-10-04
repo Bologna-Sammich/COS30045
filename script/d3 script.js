@@ -23,7 +23,7 @@ function init() {
        .range([padding, w]);
 
       yScale = d3.scaleLinear()
-        .domain([0, d3.max(dataset, function(d) { return d.percentage; })])
+        .domain([0, d3.max(dataset, function(d) { return d.percentage + 10; })])
         .range([h - padding, 0]);
 
       xAxis = d3.axisBottom()
@@ -74,7 +74,7 @@ function init() {
             svg.append("text")
               .attr("id", "tooltip")
               .attr("x", xScale(closestPoint.year))
-              .attr("y", yScale(closestPoint.percentage) - 15)
+              .attr("y", yScale(closestPoint.percentage) - 10)
               .attr("text-anchor", "middle")
               .attr("font-family", "sans-serif")
               .attr("font-size", "11px")
