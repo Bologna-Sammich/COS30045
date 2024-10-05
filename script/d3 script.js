@@ -18,7 +18,7 @@ function init() {
       xScale = d3.scaleTime()
        .domain([
         d3.min(dataset, function(d) { return d.year; }),
-        d3.max(dataset, function(d) { return d.year; })
+        d3.max(dataset, function(d) { return d.year + 10; })
       ])
        .range([padding, w]);
 
