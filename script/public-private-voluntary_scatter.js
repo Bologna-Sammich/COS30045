@@ -1,9 +1,21 @@
+// DO GROUPED VERTICAL BAR CHART. FIGURE IT OUT
+
 function init() {
-	var w = 1000;
-	var h = 600;
-	var padding = 60;
+	const margin = {top: 100, right: 20, bottom: 50, left: 190};
+	const w = 500 - margin.left - margin.right;
+	const h = 400 - margin.top - margin.bottom;
+	const padding = 60;
 	
 	var dataset, yScale, xScale, yAxis, xAxis;
+	
+	const svg = d3.select("#chart")
+		.append("svg")
+			.attr("width", "100%")
+			.attr("height", "100%")
+			.attr("viewBox", "0 0 450 350")
+			.attr("preserveAspectRatio", "xMinYMin")
+		.append("g")
+			.attr("transform", `translate(${margin.left}, ${margin.top})`);
 	
 	d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d) {
 		return {
@@ -13,35 +25,29 @@ function init() {
 		};
 	}).then(function(dataset) {
 		xScale = d3.scaleLinear()
-			
-			.domain([0, d3.max(dataset, function(d) { return d.value; })])
-			.range([padding, w]);
-			
-		yScale = d3.scaleLinear()
 			.domain([
 				d3.min(dataset, function(d) { return d.year; }),
 				d3.max(dataset, function(d) { return d.year; })
 			])
-			.range([h - padding, 0]);
+			.range([padding, w]);
 			
-		xAxis = d3.axisBottom()
-			.scale(xScale)
+		yScale = d3.scaleLinear()
+			.domain([0, d3.max(dataset, function(d) { return d.value; })])
+			.range([0, h - padding]);
+			
+		yAxis = d3.axisLeft()
+			.scale(yScale)
 			.ticks(10)
 			.tickFormat(function(tickVal) {
 				return tickVal + "%";
 			});
 			
-		yAxis = d3.axisLeft()
-			.scale(yScale)
+		xAxis = d3.axisBottom()
+			.scale(xScale)
 			.ticks(4);
 			
 		
 		console.table(dataset, ["TIME_PERIOD", "OBS_VALUE", "REFERENCE_AREA"]);
-		
-		var svg = d3.select("#chart")
-			.append("svg")
-			.attr("width", w)
-			.attr("height", h);
 			
 		svg.selectAll("rect")
 			.data(dataset)
