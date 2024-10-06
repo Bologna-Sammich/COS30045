@@ -10,12 +10,8 @@ function init() {
 	
 	const svg = d3.select("#chart")
 		.append("svg")
-			.attr("width", "100%")
-			.attr("height", "100%")
-			.attr("viewBox", "0 0 450 350")
-			.attr("preserveAspectRatio", "xMinYMin")
-		.append("g")
-			.attr("transform", `translate(${margin.left}, ${margin.top})`);
+			.attr("width", w)
+			.attr("height", h)
 	
 	d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d) {
 		return {
@@ -33,7 +29,7 @@ function init() {
 			
 		yScale = d3.scaleLinear()
 			.domain([0, d3.max(dataset, function(d) { return d.value; })])
-			.range([0, h - padding]);
+			.range([h - padding, 0]);
 			
 		yAxis = d3.axisLeft()
 			.scale(yScale)
