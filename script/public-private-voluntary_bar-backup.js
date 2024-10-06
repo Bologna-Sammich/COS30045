@@ -1,17 +1,15 @@
-// DO GROUPED VERTICAL BAR CHART. FIGURE IT OUT
-
 function init() {
-	const margin = {top: 100, right: 20, bottom: 50, left: 190};
-	const w = 500 - margin.left - margin.right;
-	const h = 400 - margin.top - margin.bottom;
-	const padding = 60;
+	var margin = {top: 100, right: 20, bottom: 50, left: 190};
+	var w = 500 - margin.left - margin.right;
+	var h = 400 - margin.top - margin.bottom;
+	var padding = 60;
 	
-	var dataset, yScale, xScale, yAxis, xAxis;
+	var dataset, yScale, xScale, yAxis, xAxis, colour;
 	
-	const svg = d3.select("#chart")
+	var svg = d3.select("#chart")
 		.append("svg")
 			.attr("width", w)
-			.attr("height", h)
+			.attr("height", h);
 	
 	d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d) {
 		return {
@@ -42,6 +40,8 @@ function init() {
 			.scale(xScale)
 			.ticks(4);
 			
+		colour = d3.scaleOrdinal()
+			.range(["#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
 		
 		console.table(dataset, ["TIME_PERIOD", "OBS_VALUE", "REFERENCE_AREA"]);
 			
