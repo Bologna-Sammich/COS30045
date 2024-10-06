@@ -20,7 +20,7 @@ var z = d3.scaleOrdinal()
 d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d, i, columns) {
   for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
   return d;
-}, function(error, data) {
+}).then(function(error, data) {
   if (error) throw error;
 
   var keys = data.columns.slice(1);
