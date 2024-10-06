@@ -1,118 +1,118 @@
-﻿REFERENCE_AREA,TIME_PERIOD,OBS_VALUE,Insurance type
-Austria,1999,99,Public and primary voluntary health insurance
-Belgium,1999,99,Public and primary voluntary health insurance
-Canada,1999,100,Public and primary voluntary health insurance
-Colombia,1999,56.8,Public and primary voluntary health insurance
-Denmark,1999,100,Public and primary voluntary health insurance
-Finland,1999,100,Public and primary voluntary health insurance
-France,1999,99.9,Public and primary voluntary health insurance
-Germany,1999,99.8,Public and primary voluntary health insurance
-Greece,1999,100,Public and primary voluntary health insurance
-Iceland,1999,100,Public and primary voluntary health insurance
-Ireland,1999,100,Public and primary voluntary health insurance
-Israel,1999,100,Public and primary voluntary health insurance
-Italy,1999,100,Public and primary voluntary health insurance
-Japan,1999,100,Public and primary voluntary health insurance
-Korea,1999,100,Public and primary voluntary health insurance
-Netherlands,1999,98.1,Public and primary voluntary health insurance
-New Zealand,1999,100,Public and primary voluntary health insurance
-Norway,1999,100,Public and primary voluntary health insurance
-Portugal,1999,100,Public and primary voluntary health insurance
-Slovak Republic,1999,100,Public and primary voluntary health insurance
-Slovenia,1999,98,Public and primary voluntary health insurance
-Sweden,1999,100,Public and primary voluntary health insurance
-Switzerland,1999,100,Public and primary voluntary health insurance
-United Kingdom,1999,100,Public and primary voluntary health insurance
-United States,1999,85.7,Public and primary voluntary health insurance
-Austria,2005,98,Public and primary voluntary health insurance
-Belgium,2005,99,Public and primary voluntary health insurance
-Canada,2005,100,Public and primary voluntary health insurance
-Chile,2005,85.3,Public and primary voluntary health insurance
-Colombia,2005,82.6,Public and primary voluntary health insurance
-Denmark,2005,100,Public and primary voluntary health insurance
-Estonia,2005,94.1,Public and primary voluntary health insurance
-Finland,2005,100,Public and primary voluntary health insurance
-France,2005,99.9,Public and primary voluntary health insurance
-Germany,2005,99.8,Public and primary voluntary health insurance
-Greece,2005,100,Public and primary voluntary health insurance
-Iceland,2005,100,Public and primary voluntary health insurance
-Ireland,2005,100,Public and primary voluntary health insurance
-Israel,2005,100,Public and primary voluntary health insurance
-Italy,2005,100,Public and primary voluntary health insurance
-Japan,2005,100,Public and primary voluntary health insurance
-Korea,2005,100,Public and primary voluntary health insurance
-Netherlands,2005,97.9,Public and primary voluntary health insurance
-New Zealand,2005,100,Public and primary voluntary health insurance
-Norway,2005,100,Public and primary voluntary health insurance
-Poland,2005,97.3,Public and primary voluntary health insurance
-Portugal,2005,100,Public and primary voluntary health insurance
-Slovenia,2005,99,Public and primary voluntary health insurance
-Sweden,2005,100,Public and primary voluntary health insurance
-Switzerland,2005,100,Public and primary voluntary health insurance
-TÃ¼rkiye,2005,86.6,Public and primary voluntary health insurance
-United Kingdom,2005,100,Public and primary voluntary health insurance
-United States,2005,85.4,Public and primary voluntary health insurance
-Austria,2014,99.9,Public and primary voluntary health insurance
-Belgium,2014,99,Public and primary voluntary health insurance
-Canada,2014,100,Public and primary voluntary health insurance
-Chile,2014,94.2,Public and primary voluntary health insurance
-Colombia,2014,96.6,Public and primary voluntary health insurance
-Costa Rica,2014,94.7,Public and primary voluntary health insurance
-Denmark,2014,100,Public and primary voluntary health insurance
-Estonia,2014,93.9,Public and primary voluntary health insurance
-Finland,2014,100,Public and primary voluntary health insurance
-France,2014,99.9,Public and primary voluntary health insurance
-Germany,2014,99.9,Public and primary voluntary health insurance
-Iceland,2014,100,Public and primary voluntary health insurance
-Ireland,2014,100,Public and primary voluntary health insurance
-Israel,2014,100,Public and primary voluntary health insurance
-Italy,2014,100,Public and primary voluntary health insurance
-Japan,2014,100,Public and primary voluntary health insurance
-Korea,2014,100,Public and primary voluntary health insurance
-Lithuania,2014,92,Public and primary voluntary health insurance
-New Zealand,2014,100,Public and primary voluntary health insurance
-Norway,2014,100,Public and primary voluntary health insurance
-Poland,2014,91.3,Public and primary voluntary health insurance
-Portugal,2014,100,Public and primary voluntary health insurance
-Romania,2014,86.2,Public and primary voluntary health insurance
-Slovak Republic,2014,94.2,Public and primary voluntary health insurance
-Slovenia,2014,100,Public and primary voluntary health insurance
-Spain,2014,99.8,Public and primary voluntary health insurance
-Sweden,2014,100,Public and primary voluntary health insurance
-Switzerland,2014,100,Public and primary voluntary health insurance
-TÃ¼rkiye,2014,98.4,Public and primary voluntary health insurance
-United Kingdom,2014,100,Public and primary voluntary health insurance
-United States,2014,88.5,Public and primary voluntary health insurance
-Austria,2021,99.9,Public and primary voluntary health insurance
-Belgium,2021,98.6,Public and primary voluntary health insurance
-Bulgaria,2021,88.2,Public and primary voluntary health insurance
-Canada,2021,100,Public and primary voluntary health insurance
-Chile,2021,94.3,Public and primary voluntary health insurance
-Costa Rica,2021,90.9,Public and primary voluntary health insurance
-Denmark,2021,100,Public and primary voluntary health insurance
-Estonia,2021,95.9,Public and primary voluntary health insurance
-Finland,2021,100,Public and primary voluntary health insurance
-France,2021,99.9,Public and primary voluntary health insurance
-Germany,2021,99.9,Public and primary voluntary health insurance
-Greece,2021,100,Public and primary voluntary health insurance
-Iceland,2021,100,Public and primary voluntary health insurance
-Ireland,2021,100,Public and primary voluntary health insurance
-Israel,2021,100,Public and primary voluntary health insurance
-Italy,2021,100,Public and primary voluntary health insurance
-Japan,2021,100,Public and primary voluntary health insurance
-Korea,2021,100,Public and primary voluntary health insurance
-Lithuania,2021,98.8,Public and primary voluntary health insurance
-Luxembourg,2021,100,Public and primary voluntary health insurance
-New Zealand,2021,100,Public and primary voluntary health insurance
-Norway,2021,100,Public and primary voluntary health insurance
-Poland,2021,94,Public and primary voluntary health insurance
-Portugal,2021,100,Public and primary voluntary health insurance
-Romania,2021,85.5,Public and primary voluntary health insurance
-Slovak Republic,2021,95,Public and primary voluntary health insurance
-Slovenia,2021,100,Public and primary voluntary health insurance
-Spain,2021,100,Public and primary voluntary health insurance
-Sweden,2021,100,Public and primary voluntary health insurance
-Switzerland,2021,100,Public and primary voluntary health insurance
-TÃ¼rkiye,2021,98.8,Public and primary voluntary health insurance
-United Kingdom,2021,100,Public and primary voluntary health insurance
-United States,2021,90.8,Public and primary voluntary health insurance
+﻿REFERENCE_AREA,TIME_PERIOD,OBS_VALUE
+Austria,1999,99
+Belgium,1999,99
+Canada,1999,100
+Colombia,1999,56.8
+Denmark,1999,100
+Finland,1999,100
+France,1999,99.9
+Germany,1999,99.8
+Greece,1999,100
+Iceland,1999,100
+Ireland,1999,100
+Israel,1999,100
+Italy,1999,100
+Japan,1999,100
+Korea,1999,100
+Netherlands,1999,98.1
+New Zealand,1999,100
+Norway,1999,100
+Portugal,1999,100
+Slovak Republic,1999,100
+Slovenia,1999,98
+Sweden,1999,100
+Switzerland,1999,100
+United Kingdom,1999,100
+United States,1999,85.7
+Austria,2005,98
+Belgium,2005,99
+Canada,2005,100
+Chile,2005,85.3
+Colombia,2005,82.6
+Denmark,2005,100
+Estonia,2005,94.1
+Finland,2005,100
+France,2005,99.9
+Germany,2005,99.8
+Greece,2005,100
+Iceland,2005,100
+Ireland,2005,100
+Israel,2005,100
+Italy,2005,100
+Japan,2005,100
+Korea,2005,100
+Netherlands,2005,97.9
+New Zealand,2005,100
+Norway,2005,100
+Poland,2005,97.3
+Portugal,2005,100
+Slovenia,2005,99
+Sweden,2005,100
+Switzerland,2005,100
+TÃ¼rkiye,2005,86.6
+United Kingdom,2005,100
+United States,2005,85.4
+Austria,2014,99.9
+Belgium,2014,99
+Canada,2014,100
+Chile,2014,94.2
+Colombia,2014,96.6
+Costa Rica,2014,94.7
+Denmark,2014,100
+Estonia,2014,93.9
+Finland,2014,100
+France,2014,99.9
+Germany,2014,99.9
+Iceland,2014,100
+Ireland,2014,100
+Israel,2014,100
+Italy,2014,100
+Japan,2014,100
+Korea,2014,100
+Lithuania,2014,92
+New Zealand,2014,100
+Norway,2014,100
+Poland,2014,91.3
+Portugal,2014,100
+Romania,2014,86.2
+Slovak Republic,2014,94.2
+Slovenia,2014,100
+Spain,2014,99.8
+Sweden,2014,100
+Switzerland,2014,100
+TÃ¼rkiye,2014,98.4
+United Kingdom,2014,100
+United States,2014,88.5
+Austria,2021,99.9
+Belgium,2021,98.6
+Bulgaria,2021,88.2
+Canada,2021,100
+Chile,2021,94.3
+Costa Rica,2021,90.9
+Denmark,2021,100
+Estonia,2021,95.9
+Finland,2021,100
+France,2021,99.9
+Germany,2021,99.9
+Greece,2021,100
+Iceland,2021,100
+Ireland,2021,100
+Israel,2021,100
+Italy,2021,100
+Japan,2021,100
+Korea,2021,100
+Lithuania,2021,98.8
+Luxembourg,2021,100
+New Zealand,2021,100
+Norway,2021,100
+Poland,2021,94
+Portugal,2021,100
+Romania,2021,85.5
+Slovak Republic,2021,95
+Slovenia,2021,100
+Spain,2021,100
+Sweden,2021,100
+Switzerland,2021,100
+TÃ¼rkiye,2021,98.8
+United Kingdom,2021,100
+United States,2021,90.8
