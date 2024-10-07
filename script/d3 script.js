@@ -1,7 +1,8 @@
 function init() {
 
-    var w = 900;
-    var h = 600;
+    var margin = { top: 20, right: 20, bottom: 80, left: 80 };
+    var w = 900 - margin.left - margin.right;  // Adjusted width
+    var h = 600 - margin.top - margin.bottom;  // Adjusted height
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
@@ -37,8 +38,10 @@ function init() {
 
       var svg = d3.select("#chart")
         .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+        .attr("width", w + margin.left + margin.right)
+        .attr("height", h + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  // Apply margin
 
       var line = d3.line()
         .x(function(d) { return xScale(d.year); })
@@ -97,19 +100,29 @@ function init() {
 				.call(xAxis);
 
       svg.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 0 - margin.left)
-        .attr("x", 0 - (height / 2))
+        .attr("x", w / 2)  // Center the label horizontally
+        .attr("y", h + margin.bottom - 20)  // Position below the X-axis
         .attr("text-anchor", "middle")
         .attr("font-family", "sans-serif")
         .attr("font-size", "16px")
-        .text("Percentage Value");
+        .text("Year");
 
 
 			svg.append("g")
 				.attr("class", "axis")
 				.attr("transform", "translate(" + padding + ",0)")
 				.call(yAxis);
+
+      // Y-axis label with correct positioning
+       svg.append("text")
+         .attr("transform", "rotate(-90)")
+         .attr("y", 0 - margin.left + 20)  // Adjust Y position
+         .attr("x", 0 - (h / 2))  // Center the label vertically
+         .attr("dy", "1em")  // Offset for better spacing
+         .attr("text-anchor", "middle")
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "16px")
+         .text("Percentage Value");
 
     });
 
