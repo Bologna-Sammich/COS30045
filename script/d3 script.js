@@ -37,7 +37,7 @@ function init() {
         .ticks(10);
 
       var xGridlines = d3.axisBottom(xScale)
-        .tickSize(-h + padding)  // Negative height makes them extend across the chart
+        .tickSize(h + padding)  // Negative height makes them extend across the chart
         .tickFormat("")  // Remove tick labels, just keep the lines
         .ticks(10);
 
