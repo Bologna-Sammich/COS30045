@@ -1,7 +1,7 @@
 function init() {
 
-    var w = 800;
-    var h = 500;
+    var w = 1000;
+    var h = 800;
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
@@ -59,7 +59,7 @@ function init() {
           .attr("fill", "none")
           .on("mouseover", function(event, d) {
             d3.select(this)
-              .attr("stroke", "orange");
+              .attr("stroke", "black");
 
             var mouseCoords = d3.pointer(event);
             var xPosition = mouseCoords[0];
