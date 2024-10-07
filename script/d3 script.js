@@ -37,7 +37,7 @@ function init() {
         .ticks(10);
 
       var xGridlines = d3.axisBottom(xScale)
-        .tickSize(h + padding)  // Negative height makes them extend across the chart
+        .tickSize(-h + padding)  // Negative height makes them extend across the chart
         .tickFormat("")  // Remove tick labels, just keep the lines
         .ticks(10);
 
@@ -74,6 +74,7 @@ function init() {
          .style("shape-rendering", "crispEdges");
 
       var line = d3.line()
+        .defined(function(d) { return d.percentage != null; })
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); })
         .curve(d3.curveBasis);
