@@ -42,7 +42,8 @@ function init() {
 
       var line = d3.line()
         .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); });
+        .y(function(d) { return yScale(d.percentage); })
+        .curve(d3.curveMonotoneX);
 
       var countries = Array.from(dataset.map(d => d.country))
 
