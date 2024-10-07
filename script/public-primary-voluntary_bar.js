@@ -64,11 +64,12 @@ svg
 );
 
 // create a tooltip
+/*
 const tooltip = d3.select("body")
   .append("#chart")
     .attr("id", "tip")
     .attr("class", "tooltip");
-
+*/
 // tooltip events
 const mouseover = function(d) {
     tooltip
