@@ -33,7 +33,7 @@ svg
   .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8));
 
 // Y scale and Axis
-const formater =  d3.format(".1s")
+const formater =  d3.format(".0%")
 const yScale = d3.scaleLinear()
     .domain([0, d3.max(data.map(d => +d.OBS_VALUE))])
     .range([height, 0]);
