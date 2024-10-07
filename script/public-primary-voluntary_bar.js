@@ -1,15 +1,15 @@
 // set the dimensions and margins of the graph
 const margin = {top: 60, right: 100, bottom: 100, left: 40};
-const width = 450 - margin.left - margin.right;
-const height = 350 - margin.top - margin.bottom;
+const width = 400 - margin.left - margin.right;
+const height = 200 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#chart")
   .append("svg")
     .attr("width", "100%")
     .attr("height", "100%")
-    .attr("viewBox", "0 0 450 250")
-    .attr("preserveAspectRatio", "xMinYMin")
+    .attr("viewBox", "0 0 400 200")
+    //.attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -33,13 +33,13 @@ svg
   .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8));
 
 // Y scale and Axis
-const formater =  d3.format(".1%")
+const formater =  d3.format(".1s")
 const yScale = d3.scaleLinear()
     .domain([0, d3.max(data.map(d => +d.OBS_VALUE))])
     .range([height, 0]);
 svg
   .append('g')
-  .call(d3.axisLeft(yScale).ticks(5).tickSize(0).tickPadding(6).tickFormat(formater))
+  .call(d3.axisLeft(yScale).ticks(5).tickSize(0).tickPadding(6).tickFormat(function(d) { return formater(d) + "%"; }))
   .call(d => d.select(".domain").remove());
 
 // set subgroup sacle
