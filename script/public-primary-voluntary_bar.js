@@ -6,9 +6,9 @@ const height = 350 - margin.top - margin.bottom;
 // append the svg object to the body of the page
 const svg = d3.select("#chart")
   .append("svg")
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("viewBox", "0 0 450 350")
+    .attr("width", "50%")
+    .attr("height", "50%")
+    //.attr("viewBox", "0 0 450 350")
     .attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -108,15 +108,6 @@ bars = svg.append("g")
   .on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
 
-// set title
-svg
-  .append("text")
-    .attr("class", "chart-title")
-    .attr("x", -(margin.left)*0.6)
-    .attr("y", -(margin.top)/1.5)
-    .attr("text-anchor", "start")
-  .text("Refugees in Africa region | 2018-2021")
-
 // set Y axis label
 svg
   .append("text")
@@ -124,25 +115,7 @@ svg
     .attr("x", -(margin.left)*0.6)
     .attr("y", -(margin.top/15))
     .attr("text-anchor", "start")
-  .text("Displaced population (millions)")
-
-// set source
-svg
-  .append("text")
-    .attr("class", "chart-source")
-    .attr("x", -(margin.left)*0.6)
-    .attr("y", height + margin.bottom*0.7)
-    .attr("text-anchor", "start")
-  .text("Source: UNHCR Refugee Data Finder")
-
-// set copyright
-svg
-  .append("text")
-    .attr("class", "copyright")
-    .attr("x", -(margin.left)*0.6)
-    .attr("y", height + margin.bottom*0.9)
-    .attr("text-anchor", "start")
-  .text("©UNHCR, The UN Refugee Agency")
+  .text("Percentage of population")
 
 //set legend
 svg
@@ -151,37 +124,54 @@ svg
     .attr("y", -(margin.top/2))
     .attr("width", 13)
     .attr("height", 13)
-    .style("fill", "#18375F");
+    .style("fill", "#e41a1c");
 svg
     .append("text")
         .attr("class", "legend")
         .attr("x", -(margin.left)*0.6+20)
         .attr("y", -(margin.top/2.5))
-    .text("East and Horn of Africa and Great Lakes")
+    .text("1999")
+	
 svg
     .append("rect")
-        .attr("x", 180)
+        .attr("x", -(margin.left)*0.7)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
-        .style("fill", "#0072BC")
+        .style("fill", "#377eb8")
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", 200)
+        .attr("x", -(margin.left)*0.7+20)
         .attr("y", -(margin.top/2.5))
-    .text("Southern Africa")
+    .text("2005")
+	
 svg
     .append("rect")
-        .attr("x", 280)
+        .attr("x", -(margin.left)*0.8)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
-        .style("fill", "#8EBEFF")
+        .style("fill", "#4daf4a")
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", 300)
+        .attr("x", -(margin.left)*0.8+20)
         .attr("y", -(margin.top/2.5))
-    .text("West and Central Africa")
+    .text("2014")
+	
+svg
+    .append("rect")
+        .attr("x", -(margin.left)*0.9)
+        .attr("y", -(margin.top/2))
+        .attr("width", 13)
+        .attr("height", 13)
+        .style("fill", "#984ea3")
+svg
+    .append("text")
+        .attr("class", "legend")
+        .attr("x", -(margin.left)*0.9+20)
+        .attr("y", -(margin.top/2.5))
+    .text("2021")	
+
 })
