@@ -1,7 +1,7 @@
 function init() {
 
-    var w = 800;
-    var h = 500;
+    var w = 900;
+    var h = 600;
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
@@ -20,7 +20,7 @@ function init() {
         d3.min(dataset, function(d) { return d.year; }),
         d3.max(dataset, function(d) { return d.year; })
       ])
-       .range([padding, w]);
+       .range([padding, w - padding - 40]);
 
       yScale = d3.scaleLinear()
         .domain([0, d3.max(dataset, function(d) { return d.percentage + 10; })])
@@ -42,7 +42,8 @@ function init() {
 
       var line = d3.line()
         .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); });
+        .y(function(d) { return yScale(d.percentage); })
+        .curve(d3.curveBasis);
 
       var countries = Array.from(dataset.map(d => d.country))
 
@@ -58,7 +59,7 @@ function init() {
           .attr("fill", "none")
           .on("mouseover", function(event, d) {
             d3.select(this)
-              .attr("stroke", "orange");
+              .attr("stroke", "black");
 
             var mouseCoords = d3.pointer(event);
             var xPosition = mouseCoords[0];
