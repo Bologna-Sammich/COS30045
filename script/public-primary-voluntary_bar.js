@@ -35,7 +35,7 @@ svg
 // Y scale and Axis
 const formater =  d3.format(".1s")
 const yScale = d3.scaleLinear()
-    .domain([0, d3.max(data.map(d => +d.refugee_number))])
+    .domain([0, d3.max(data.map(d => +d.OBS_VALUE))])
     .range([height, 0]);
 svg
   .append('g')
@@ -102,7 +102,7 @@ bars = svg.append("g")
      .attr("x", d => xSubgroups(d[0]))
      .attr("y", d => yScale(d[1]))
      .attr("width", xSubgroups.bandwidth())
-     .attr("height", d => height - yScale(d[0]))
+     .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
   .on("mouseover", mouseover)
   .on("mousemove", mousemove)
