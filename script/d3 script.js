@@ -1,6 +1,6 @@
 function init() {
 
-    var margin = { top: 20, right: 20, bottom: 80, left: 80 };
+    var margin = { top: 20, right: 20, bottom: 20, left: 20 };
     var w = 900 - margin.left - margin.right;  // Adjusted width
     var h = 600 - margin.top - margin.bottom;  // Adjusted height
     var padding = 60;
