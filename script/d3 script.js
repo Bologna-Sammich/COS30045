@@ -74,7 +74,6 @@ function init() {
          .style("shape-rendering", "crispEdges");
 
       var line = d3.line()
-        .defined(function(d) { return d.percentage != null; })
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); })
         .curve(d3.curveBasis);
