@@ -17,7 +17,7 @@ const svg = d3.select("#chart")
 d3.csv("data/public-primary-voluntary_1995-2023.csv").then(function(data){
 
 // data wrangling
-const dataRollup = d3.rollups(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
+const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
 const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
