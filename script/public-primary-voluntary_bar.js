@@ -6,9 +6,9 @@ const height = 350 - margin.top - margin.bottom;
 // append the svg object to the body of the page
 const svg = d3.select("#chart")
   .append("svg")
-    .attr("width", "50%")
-    .attr("height", "50%")
-    //.attr("viewBox", "0 0 450 350")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("viewBox", "0 0 450 350")
     .attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
