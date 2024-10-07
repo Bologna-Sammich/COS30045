@@ -17,7 +17,7 @@ const svg = d3.select("#chart")
 d3.csv("data/public-primary-voluntary_1995-2023.csv").then(function(data){
 
 // data wrangling
-const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
+const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.TIME_PERIOD, d => d.REFERENCE_AREA)
 const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
@@ -134,7 +134,7 @@ svg
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.7)
+        .attr("x", -(margin.left)*2.6)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -142,13 +142,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.7+20)
+        .attr("x", -(margin.left)*2.6+20)
         .attr("y", -(margin.top/2.5))
     .text("2005")
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.8)
+        .attr("x", -(margin.left)*4.6)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -156,13 +156,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.8+20)
+        .attr("x", -(margin.left)*4.6+20)
         .attr("y", -(margin.top/2.5))
     .text("2014")
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.9)
+        .attr("x", -(margin.left)*6.6)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -170,7 +170,7 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.9+20)
+        .attr("x", -(margin.left)*6.6+20)
         .attr("y", -(margin.top/2.5))
     .text("2021")	
 
