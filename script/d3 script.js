@@ -1,7 +1,7 @@
 function init() {
 
-    var w = 1000;
-    var h = 800;
+    var w = 900;
+    var h = 700;
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
@@ -43,7 +43,7 @@ function init() {
       var line = d3.line()
         .x(function(d) { return xScale(d.year); })
         .y(function(d) { return yScale(d.percentage); })
-        .curve(d3.curveMonotoneX);
+        .curve(d3.curveBasis);
 
       var countries = Array.from(dataset.map(d => d.country))
 
