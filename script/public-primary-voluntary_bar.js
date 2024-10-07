@@ -97,13 +97,13 @@ bars = svg.append("g")
   .join("g")
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
-  .data(d => { return d[1] })
+  .data(d => { return d[0] })
   .join("rect")
-     .attr("x", d => xSubgroups(d[0]))
-     .attr("y", d => yScale(d[1]))
+     .attr("x", d => xSubgroups(d[1]))
+     .attr("y", d => yScale(d[2]))
      .attr("width", xSubgroups.bandwidth())
-     .attr("height", d => height - yScale(d[1]))
-     .attr("fill", d=>color(d[0]))
+     .attr("height", d => height - yScale(d[0]))
+     .attr("fill", d=>color(d[1]))
   .on("mouseover", mouseover)
   .on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
@@ -134,7 +134,7 @@ svg
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.7)
+        .attr("x", 26)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -142,13 +142,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.7+20)
+        .attr("x", 46)
         .attr("y", -(margin.top/2.5))
     .text("2005")
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.8)
+        .attr("x", 76)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -156,13 +156,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.8+20)
+        .attr("x", 96)
         .attr("y", -(margin.top/2.5))
     .text("2014")
 	
 svg
     .append("rect")
-        .attr("x", -(margin.left)*0.9)
+        .attr("x", 126)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -170,7 +170,7 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", -(margin.left)*0.9+20)
+        .attr("x", 146)
         .attr("y", -(margin.top/2.5))
     .text("2021")	
 
