@@ -1,7 +1,7 @@
 function init() {
 
     var w = 900;
-    var h = 700;
+    var h = 600;
     var padding = 60;
 
     var formatTime = d3.timeFormat("%Y");
@@ -18,7 +18,7 @@ function init() {
       xScale = d3.scaleTime()
        .domain([
         d3.min(dataset, function(d) { return d.year; }),
-        d3.max(dataset, function(d) { return d.year; })
+        d3.max(dataset, function(d) { return d.year - 10; })
       ])
        .range([padding, w]);
 
