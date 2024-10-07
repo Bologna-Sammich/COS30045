@@ -1,93 +1,187 @@
-chart = {
-  // Specify the chart’s dimensions.
-  var width = 928;
-  var height = 600;
-  var marginTop = 10;
-  var marginRight = 10;
-  var marginBottom = 20;
-  var marginLeft = 40;
+// set the dimensions and margins of the graph
+const margin = {top: 100, right: 20, bottom: 50, left: 40};
+const width = 450 - margin.left - margin.right;
+const height = 350 - margin.top - margin.bottom;
 
-  // Prepare the scales for positional and color encodings.
-  // Fx encodes the state.
-  var fx = d3.scaleBand()
-      .domain(new Set(data.map(d => d.country)))
-      .rangeRound([marginLeft, width - marginRight])
-      .paddingInner(0.1);
+// append the svg object to the body of the page
+const svg = d3.select("#chart")
+  .append("svg")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("viewBox", "0 0 450 350")
+    .attr("preserveAspectRatio", "xMinYMin")
+  .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-  // Both x and color encode the age class.
-  var years = new Set(data.map(d => d.year));
+// parse the Data
+d3.csv("data/public-private-voluntary_1995-2023.csv").then(function(data){
 
-  var x = d3.scaleBand()
-      .domain(years)
-      .rangeRound([0, fx.bandwidth()])
-      .padding(0.05);
+// data wrangling
+const dataRollup = d3.rollups(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
+const countryKeys = Array.from(dataRollup).map(d => d[0])
+const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
+const yearKey_sorted = yearKey.sort(d3.ascending)
 
-  var color = d3.scaleOrdinal()
-      .domain(years)
-      .range(d3.schemeSpectral[years.size])
-      .unknown("#ccc");
+// X scale and Axis
+const xScale = d3.scaleBand()
+  .domain(countryKeys)
+  .range([0, width])
+  .padding(.2);
+svg
+  .append('g')
+  .attr("transform", `translate(0,${height})`)
+  .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8));
 
-  // Y encodes the height of the bar.
-  var y = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.value)]).nice()
-      .rangeRound([height - marginBottom, marginTop]);
+// Y scale and Axis
+const formater =  d3.format(".1s")
+const yScale = d3.scaleLinear()
+    .domain([0, d3.max(data.map(d => +d.refugee_number))])
+    .range([height, 0]);
+svg
+  .append('g')
+  .call(d3.axisLeft(yScale).ticks(5).tickSize(0).tickPadding(6).tickFormat(formater))
+  .call(d => d.select(".domain").remove());
 
-  // A function to format the value in the tooltip.
-  var formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+// set subgroup sacle
+const xSubgroups = d3.scaleBand()
+  .domain(yearKey_sorted)
+  .range([0, xScale.bandwidth()])
+  .padding([0.05])
 
-  // Create the SVG container.
-  var svg = d3.create("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("viewBox", [0, 0, width, height])
-      .attr("style", "max-width: 100%; height: auto;");
+// color palette
+const color = d3.scaleOrdinal()
+  .domain(yearKey_sorted)
+  .range(["#e41a1c","#377eb8","#4daf4a","#984ea3"])
 
-  // Append a group for each state, and a rect for each age.
-  svg.append("g")
-    .selectAll()
-    .data(d3.group(data, d => d.country))
-    .join("g")
-      .attr("transform", ([country]) => `translate(${fx(country)},0)`)
-    .selectAll()
-    .data(([, d]) => d)
-    .join("rect")
-      .attr("x", d => x(d.year))
-      .attr("y", d => y(d.value))
-      .attr("width", x.bandwidth())
-      .attr("height", d => y(0) - y(d.value))
-      .attr("fill", d => color(d.year));
+// set horizontal grid line
+const GridLine = () => d3.axisLeft().scale(yScale);
+svg
+  .append("g")
+    .attr("class", "grid")
+  .call(GridLine()
+    .tickSize(-width,0,0)
+    .tickFormat("")
+);
 
-  // Append the horizontal axis.
-  svg.append("g")
-      .attr("transform", `translate(0,${height - marginBottom})`)
-      .call(d3.axisBottom(fx).tickSizeOuter(0))
-      .call(g => g.selectAll(".domain").remove());
+// create a tooltip
+const tooltip = d3.select("body")
+  .append("div")
+    .attr("id", "chart")
+    .attr("class", "tooltip");
 
-  // Append the vertical axis.
-  svg.append("g")
-      .attr("transform", `translate(${marginLeft},0)`)
-      .call(d3.axisLeft(y).ticks(null, "s"))
-      .call(g => g.selectAll(".domain").remove());
-
-  // Return the chart with the color scale as a property (for the legend).
-  return Object.assign(svg.node(), {scales: {color}});
+// tooltip events
+const mouseover = function(d) {
+    tooltip
+      .style("opacity", .8)
+    d3.select(this)
+      .style("opacity", .5)
+}
+const mousemove = function(event, d) {
+  const formater =  d3.format(",")
+    tooltip
+      .html(formater(d[1]))
+      .style("top", event.pageY - 10 + "px")
+      .style("left", event.pageX + 10 + "px");
+}
+const mouseleave = function(d) {
+    tooltip
+      .style("opacity", 0)
+    d3.select(this)
+      .style("opacity", 1)
 }
 
-data = {
-  let data = await FileAttachment("data/public-private-voluntary_1995-2023.csv").csv({typed: true});
-  var ages = data.columns.slice(1);
-  data = d3.sort(data, d => -d3.sum(year, TIME_PERIOD => d[year])).slice(0, 6);
-  return ages.flatMap((TIME_PERIOD) => data.map((d) => ({REFERENCE_AREA: d.name, TIME_PERIOD, OBS_VALUE: d[year]})));
-}
+// create bars
+bars = svg.append("g")
+  .selectAll("g")
+  .data(dataRollup)
+  .join("g")
+     .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
+  .selectAll("rect")
+  .data(d => { return d[1] })
+  .join("rect")
+     .attr("x", d => xSubgroups(d[0]))
+     .attr("y", d => yScale(d[1]))
+     .attr("width", xSubgroups.bandwidth())
+     .attr("height", d => height - yScale(d[1]))
+     .attr("fill", d=>color(d[0]))
+  .on("mouseover", mouseover)
+  .on("mousemove", mousemove)
+  .on("mouseleave", mouseleave);
 
-import {legend} from "@d3/color-legend"
-Plot.plot({
-  x: {axis: null},
-  y: {tickFormat: "s"},
-  fx: {label: null},
-  color: {scheme: "spectral"},
-  marks: [
-    Plot.barY(data, {fx: "country", x:"year", y: "value", fill: "year", sort: {color: null, x: null, fx: {value: "-y", reduce: "sum"}}}),
-    Plot.ruleY([0])
-  ]
+// set title
+svg
+  .append("text")
+    .attr("class", "chart-title")
+    .attr("x", -(margin.left)*0.6)
+    .attr("y", -(margin.top)/1.5)
+    .attr("text-anchor", "start")
+  .text("Refugees in Africa region | 2018-2021")
+
+// set Y axis label
+svg
+  .append("text")
+    .attr("class", "chart-label")
+    .attr("x", -(margin.left)*0.6)
+    .attr("y", -(margin.top/15))
+    .attr("text-anchor", "start")
+  .text("Displaced population (millions)")
+
+// set source
+svg
+  .append("text")
+    .attr("class", "chart-source")
+    .attr("x", -(margin.left)*0.6)
+    .attr("y", height + margin.bottom*0.7)
+    .attr("text-anchor", "start")
+  .text("Source: UNHCR Refugee Data Finder")
+
+// set copyright
+svg
+  .append("text")
+    .attr("class", "copyright")
+    .attr("x", -(margin.left)*0.6)
+    .attr("y", height + margin.bottom*0.9)
+    .attr("text-anchor", "start")
+  .text("©UNHCR, The UN Refugee Agency")
+
+//set legend
+svg
+.append("rect")
+    .attr("x", -(margin.left)*0.6)
+    .attr("y", -(margin.top/2))
+    .attr("width", 13)
+    .attr("height", 13)
+    .style("fill", "#18375F");
+svg
+    .append("text")
+        .attr("class", "legend")
+        .attr("x", -(margin.left)*0.6+20)
+        .attr("y", -(margin.top/2.5))
+    .text("East and Horn of Africa and Great Lakes")
+svg
+    .append("rect")
+        .attr("x", 180)
+        .attr("y", -(margin.top/2))
+        .attr("width", 13)
+        .attr("height", 13)
+        .style("fill", "#0072BC")
+svg
+    .append("text")
+        .attr("class", "legend")
+        .attr("x", 200)
+        .attr("y", -(margin.top/2.5))
+    .text("Southern Africa")
+svg
+    .append("rect")
+        .attr("x", 280)
+        .attr("y", -(margin.top/2))
+        .attr("width", 13)
+        .attr("height", 13)
+        .style("fill", "#8EBEFF")
+svg
+    .append("text")
+        .attr("class", "legend")
+        .attr("x", 300)
+        .attr("y", -(margin.top/2.5))
+    .text("West and Central Africa")
 })
