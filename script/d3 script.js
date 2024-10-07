@@ -90,39 +90,21 @@ function init() {
           });
       })
 
-      // australia = d3.line()
-      //   .defined(function(d) { return d.country == "Australia";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-      // austria = d3.line()
-      //   .defined(function(d) { return d.country == "Austria";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-      // brazil = d3.line()
-      //   .defined(function(d) { return d.country == "Brazil";})
-      //   .x(function(d) { return xScale(d.year); })
-      //   .y(function(d) { return yScale(d.percentage); });
-      //
-
-      //
-      // svg.append("path")
-      //   .datum(dataset)
-      //   .attr("class", "line")
-      //   .attr("d", australia);
-      //
-      // svg.append("path")
-      //   .datum(dataset)
-      //   .attr("class", "line2")
-      //   .attr("d", austria);
-
-
 
       svg.append("g")
 				.attr("class", "axis")
 				.attr("transform", "translate(0," + (h - padding) + ")")
 				.call(xAxis);
+
+      svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x", 0 - (height / 2))
+        .attr("text-anchor", "middle")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "16px")
+        .text("Percentage Value");
+
 
 			svg.append("g")
 				.attr("class", "axis")
