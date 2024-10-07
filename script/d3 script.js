@@ -72,7 +72,7 @@ function init() {
           .attr("fill", "none")
           .style("pointer-events", "stroke")
           .on("mouseover", function(event, d) {
-            d3.select(this)
+            d3.select(`.line.country-${i}`)
               .attr("stroke", "black");
 
             var mouseCoords = d3.pointer(event);
@@ -97,7 +97,7 @@ function init() {
               .text(`${country} ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
           })
           .on("mouseout", function(d) {
-            d3.select(this)
+            d3.select(`.line.country-${i}`)
               .attr("stroke", colorScale(country));
             d3.select("#tooltip").remove();
           });
