@@ -21,7 +21,7 @@ function init() {
         d3.min(dataset, function(d) { return d.year; }),
         d3.max(dataset, function(d) { return d.year; })
       ])
-       .range([padding, w - padding - 40]);
+       .range([padding, w - padding - 80]);
 
       yScale = d3.scaleLinear()
         .domain([0, d3.max(dataset, function(d) { return d.percentage + 10; })])
@@ -53,13 +53,24 @@ function init() {
       var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       countries.forEach(function(country, i) {
+        //Draw actual line
         svg.append("path")
           .datum(dataset.filter(function(d) {return d.country === country; }))
           .attr("class", `line country-${i}`)
           .attr("d", line)
           .attr("stroke", colorScale(country))
           .attr("stroke-width", "2")
+          .attr("fill", "none");
+
+        //Invisible line with bigger hitbox for hovering
+        svg.append("path")
+          .datum(dataset.filter(function(d) { return d.country === country; }))
+          .attr("class", `hitbox country-${i}`)
+          .attr("d", line)
+          .attr("stroke", "none")
+          .attr("stroke-width", "10")  // Larger hitbox (10px width)
           .attr("fill", "none")
+          .style("pointer-events", "stroke")
           .on("mouseover", function(event, d) {
             d3.select(this)
               .attr("stroke", "black");
@@ -69,7 +80,6 @@ function init() {
             // var yPosition = mouseCoords[1];
             var xDate = xScale.invert(xPosition);
 
-            // Find closest data point for Brazil
             var countryData = dataset.filter(function(d) { return d.country == country; });
             var closestPoint = d.reduce(function(prev, curr) {
               return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
