@@ -42,7 +42,7 @@ function init() {
         .ticks(10);
 
       var yGridlines = d3.axisLeft(yScale)
-        .tickSize(-w + padding)  // Extend across the width of the chart
+        .tickSize(-w)  // Extend across the width of the chart
         .tickFormat("")
         .ticks(10);
 
