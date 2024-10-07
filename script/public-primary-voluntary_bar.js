@@ -134,7 +134,7 @@ svg
 	
 svg
     .append("rect")
-        .attr("x", 180)
+        .attr("x", -(margin.left)*0.7)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -142,13 +142,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", 200)
+        .attr("x", -(margin.left)*0.7+20)
         .attr("y", -(margin.top/2.5))
     .text("2005")
 	
 svg
     .append("rect")
-        .attr("x", 280)
+        .attr("x", -(margin.left)*0.8)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -156,13 +156,13 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", 300)
+        .attr("x", -(margin.left)*0.8+20)
         .attr("y", -(margin.top/2.5))
     .text("2014")
 	
 svg
     .append("rect")
-        .attr("x", 380)
+        .attr("x", -(margin.left)*0.9)
         .attr("y", -(margin.top/2))
         .attr("width", 13)
         .attr("height", 13)
@@ -170,7 +170,7 @@ svg
 svg
     .append("text")
         .attr("class", "legend")
-        .attr("x", 400)
+        .attr("x", -(margin.left)*0.9+20)
         .attr("y", -(margin.top/2.5))
     .text("2021")	
 
