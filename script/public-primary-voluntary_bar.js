@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-const margin = {top: 60, right: 100, bottom: 100, left: 40};
+const margin = {top: 90, right: 100, bottom: 100, left: 40};
 const width = 350 - margin.left - margin.right;
 const height = 300 - margin.top - margin.bottom;
 
@@ -108,14 +108,14 @@ bars = svg.append("g")
   .on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
 
-// set Y axis label
+// set title
 svg
   .append("text")
-    .attr("class", "chart-label")
+    .attr("class", "chart-title")
     .attr("x", -(margin.left)*0.6)
-    .attr("y", -(margin.top/15))
+    .attr("y", -(margin.top)/1.5)
     .attr("text-anchor", "start")
-  .text("Percentage of population")
+  .text("Public & primary voluntary health insurance as per population percentage")
 
 //set legend
 svg
