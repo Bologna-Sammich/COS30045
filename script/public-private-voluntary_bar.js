@@ -1,42 +1,42 @@
 chart = {
   // Specify the chart’s dimensions.
-  const width = 928;
-  const height = 600;
-  const marginTop = 10;
-  const marginRight = 10;
-  const marginBottom = 20;
-  const marginLeft = 40;
+  var width = 928;
+  var height = 600;
+  var marginTop = 10;
+  var marginRight = 10;
+  var marginBottom = 20;
+  var marginLeft = 40;
 
   // Prepare the scales for positional and color encodings.
   // Fx encodes the state.
-  const fx = d3.scaleBand()
+  var fx = d3.scaleBand()
       .domain(new Set(data.map(d => d.country)))
       .rangeRound([marginLeft, width - marginRight])
       .paddingInner(0.1);
 
   // Both x and color encode the age class.
-  const years = new Set(data.map(d => d.year));
+  var years = new Set(data.map(d => d.year));
 
-  const x = d3.scaleBand()
+  var x = d3.scaleBand()
       .domain(years)
       .rangeRound([0, fx.bandwidth()])
       .padding(0.05);
 
-  const color = d3.scaleOrdinal()
+  var color = d3.scaleOrdinal()
       .domain(years)
       .range(d3.schemeSpectral[years.size])
       .unknown("#ccc");
 
   // Y encodes the height of the bar.
-  const y = d3.scaleLinear()
+  var y = d3.scaleLinear()
       .domain([0, d3.max(data, d => d.value)]).nice()
       .rangeRound([height - marginBottom, marginTop]);
 
   // A function to format the value in the tooltip.
-  const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+  var formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
 
   // Create the SVG container.
-  const svg = d3.create("svg")
+  var svg = d3.create("svg")
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
@@ -75,7 +75,7 @@ chart = {
 
 data = {
   let data = await FileAttachment("data/public-private-voluntary_1995-2023.csv").csv({typed: true});
-  const ages = data.columns.slice(1);
+  var ages = data.columns.slice(1);
   data = d3.sort(data, d => -d3.sum(year, TIME_PERIOD => d[year])).slice(0, 6);
   return ages.flatMap((TIME_PERIOD) => data.map((d) => ({REFERENCE_AREA: d.name, TIME_PERIOD, OBS_VALUE: d[year]})));
 }
