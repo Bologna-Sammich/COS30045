@@ -32,8 +32,18 @@ function init() {
        .ticks(10)
        .tickFormat(formatTime);
 
-       yAxis = d3.axisLeft()
+      yAxis = d3.axisLeft()
         .scale(yScale)
+        .ticks(10);
+
+      var xGridlines = d3.axisBottom(xScale)
+        .tickSize(-h + padding)  // Negative height makes them extend across the chart
+        .tickFormat("")  // Remove tick labels, just keep the lines
+        .ticks(10);
+
+      var yGridlines = d3.axisLeft(yScale)
+        .tickSize(-w + padding + 40)  // Extend across the width of the chart
+        .tickFormat("")
         .ticks(10);
 
       var svg = d3.select("#chart")
@@ -41,7 +51,27 @@ function init() {
         .attr("width", w + margin.left + margin.right)
         .attr("height", h + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  // Apply margin
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      // Add horizontal gridlines
+       svg.append("g")
+         .attr("class", "grid")
+         .attr("transform", "translate(" + padding + ",0)")
+         .call(yGridlines)
+         .selectAll("line")
+         .style("stroke", "lightgray")
+         .style("stroke-opacity", "0.7")
+         .style("shape-rendering", "crispEdges");
+
+       // Add vertical gridlines
+       svg.append("g")
+         .attr("class", "grid")
+         .attr("transform", "translate(0," + (h - padding) + ")")
+         .call(xGridlines)
+         .selectAll("line")
+         .style("stroke", "lightgray")
+         .style("stroke-opacity", "0.7")
+         .style("shape-rendering", "crispEdges");
 
       var line = d3.line()
         .x(function(d) { return xScale(d.year); })
