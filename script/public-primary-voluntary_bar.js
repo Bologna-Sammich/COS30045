@@ -14,10 +14,10 @@ const svg = d3.select("#chart")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // parse the Data
-d3.csv("data/public-primary-voluntary_1995-2023.csv").then(function(data){
+d3.csv("data/public-primary-voluntary_1995-2023-new.csv").then(function(data){
 
 // data wrangling
-const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
+const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.TIME_PERIOD, d => d.REFERENCE_AREA)
 const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
@@ -99,11 +99,11 @@ bars = svg.append("g")
   .selectAll("rect")
   .data(d => { return d[0] })
   .join("rect")
-     .attr("x", d => xSubgroups(d[1]))
-     .attr("y", d => yScale(d[0]))
+     .attr("x", d => xSubgroups(d[0]))
+     .attr("y", d => yScale(d[1]))
      .attr("width", xSubgroups.bandwidth())
-     .attr("height", d => height - yScale(d[0]))
-     .attr("fill", d=>color(d[1]))
+     .attr("height", d => height - yScale(d[1]))
+     .attr("fill", d=>color(d[0]))
   .on("mouseover", mouseover)
   .on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
