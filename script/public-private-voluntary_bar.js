@@ -1,83 +1,82 @@
-var svg = d3.select("#chart"),
-    margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom,
-    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+function init() {
+	
+	var w = 700;
+	var h = 400;
+	var padding = 60;
+	
+	var svg = d3.select("#chart")
+		.append("svg")
+		.attr("width", w)
+		.attr("height", h);
 
-var x0 = d3.scaleBand()
-    .rangeRound([0, width])
-    .paddingInner(0.1);
+	
+		
+	d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d) {
+		return {
+			year: new Date(d.TIME_PERIOD),
+			value: +d.OBS_VALUE,
+			country: d.REFERENCE_AREA
+		};
+	}).then(function(dataset) {
+		var countries = Array.from(dataset.map(d => d.country));			
+		
+		var xScale = d3.scaleLinear()
+			.domain([0, (countries.length + padding)])
+			.range([padding, w]);
+			
+		var yScale = d3.scaleLinear()
+			.domain([0, d3.max(dataset, function(d) { return d.value + padding; })])
+			.range([h - padding, 0]);
+			
+		var yAxis = d3.axisLeft()
+			.scale(yScale)
+			.ticks(10);
+			
+		var fx = d3.scaleBand()
+			.domain(new Set(dataset.map(d => d.country)))
+			.rangeRound([40, w - 10])
+			.paddingInner(0.1);
+			
+		var years = new Set(dataset.map(d => d.year));
+		
+		var x = d3.scaleBand()
+			.domain(years)
+			.rangeRound([0, fx.bandwidth()])
+			.padding(0.05);
+		
+		var colour = d3.scaleOrdinal()
+			.domain(years)
+			.range(d3.schemeSpectral[year.size])
+			.unknown("#ccc");
+		
+		var y = d3.scaleLinear()
+			.domain([0, d3.max(dataset, d => d.value)]).nice()
+			.rangeRound([h - 20, 10]);
+		
+		svg.append("g")
+			.selectAll()
+			.data(d3.group(dataset, d => d.country))
+			.join("g")
+				.attr("transform", ([country]) => `translate(${xScale(country)},0)`)
+			.selectAll()
+			.data(([,d]) => d)
+			.join("rect")
+				.attr("x", d => x(d.year))
+				.attr("y", d => y(d.value))
+				.attr("width", x.bandwidth())
+				.attr("height", d => y(0) - y(d.value))
+				.attr("fill", d => colour(d.year));
+				
+		svg.append("g")
+			.attr("transform", `translate(0,${h - 20})`)
+			.call(d3.axisBottom(fx).tickSizeOuter(0))
+			.call(g => g.selectAll(".domain").remove());
+			
+		svg.append("g")
+			.attr("transform", `translate(${40},0`)
+			.call(d3.axisLeft(y).ticks(null, "s"))
+			.call(g => g.selectAll(".domain").remove());
+	});
+}
 
-var x1 = d3.scaleBand()
-    .padding(0.05);
-
-var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
-
-var z = d3.scaleOrdinal()
-    .range(["#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
-
-d3.csv("data/public-primary-voluntary_1995-2023.csv", function(d, i, columns) {
-  for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-  return d;
-}).then(function(error, data) {
-  if (error) throw error;
-
-  var keys = data.columns.slice(1);
-
-  x0.domain(data.map(function(d) { return d.State; }));
-  x1.domain(keys).rangeRound([0, x0.bandwidth()]);
-  y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
-
-  g.append("g")
-    .selectAll("g")
-    .data(data)
-    .enter().append("g")
-      .attr("transform", function(d) { return "translate(" + x0(d.State) + ",0)"; })
-    .selectAll("rect")
-    .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
-    .enter().append("rect")
-      .attr("x", function(d) { return x1(d.key); })
-      .attr("y", function(d) { return y(d.value); })
-      .attr("width", x1.bandwidth())
-      .attr("height", function(d) { return height - y(d.value); })
-      .attr("fill", function(d) { return z(d.key); });
-
-  g.append("g")
-      .attr("class", "axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x0));
-
-  g.append("g")
-      .attr("class", "axis")
-      .call(d3.axisLeft(y).ticks(null, "s"))
-    .append("text")
-      .attr("x", 2)
-      .attr("y", y(y.ticks().pop()) + 0.5)
-      .attr("dy", "0.32em")
-      .attr("fill", "#000")
-      .attr("font-weight", "bold")
-      .attr("text-anchor", "start")
-      .text("Population");
-
-  var legend = g.append("g")
-      .attr("font-family", "sans-serif")
-      .attr("font-size", 10)
-      .attr("text-anchor", "end")
-    .selectAll("g")
-    .data(keys.slice().reverse())
-    .enter().append("g")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-  legend.append("rect")
-      .attr("x", width - 19)
-      .attr("width", 19)
-      .attr("height", 19)
-      .attr("fill", z);
-
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9.5)
-      .attr("dy", "0.32em")
-      .text(function(d) { return d; });
-});
+window.onload = init;
