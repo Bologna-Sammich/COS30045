@@ -9,7 +9,7 @@ const svg = d3.select("#chart")
     .attr("width", "100%")
     .attr("height", "100%")
     .attr("viewBox", "0 0 350 300")
-    //.attr("preserveAspectRatio", "xMinYMin")
+    .attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
