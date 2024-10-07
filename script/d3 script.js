@@ -68,7 +68,7 @@ function init() {
           .attr("class", `hitbox country-${i}`)
           .attr("d", line)
           .attr("stroke", "none")
-          .attr("stroke-width", "10")  // Larger hitbox (10px width)
+          .attr("stroke-width", "7")  // Larger hitbox (10px width)
           .attr("fill", "none")
           .style("pointer-events", "stroke")
           .on("mouseover", function(event, d) {
