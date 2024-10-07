@@ -46,7 +46,7 @@ function init() {
 		
 		var colour = d3.scaleOrdinal()
 			.domain(years)
-			.range(d3.schemeSpectral[year.size])
+			.range(d3.schemeSpectral[years.size])
 			.unknown("#ccc");
 		
 		var y = d3.scaleLinear()
