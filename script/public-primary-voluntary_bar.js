@@ -192,7 +192,7 @@ svg
 function update(selectedCountry) {
 
       // Create new data with the selection?
-      var dataFilter = dataRollup.filter(function(d){return d.REFERENCE_AREA==selectedCountry})
+      var dataFilter = data.filter(function(d){return d.REFERENCE_AREA==selectedCountry})
 
 	  bars
 		.data(dataFilter)
