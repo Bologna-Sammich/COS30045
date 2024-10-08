@@ -80,7 +80,7 @@ const mousemove = function(event, d) {
   const formater =  d3.format(",")
   let xPos = event.clientX;
   let yPos = event.clientY;
-  var yPos = parseFloat(d3.select(this).attr("y"))
+
     tooltip
       .html(formater(d[1]) + "%")
       .attr("x", xPos)
