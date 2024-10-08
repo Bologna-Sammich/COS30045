@@ -1,3 +1,11 @@
+.line {
+	fill: none;
+}
+
+svg {
+	shape-rendering: geometricPrecision; /* Ensures higher quality lines */
+}
+
 .placeholder {
 	text-align: center;
 	border-radius: 8px;
