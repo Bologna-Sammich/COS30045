@@ -76,7 +76,7 @@ const mouseover = function(d) {
     d3.select(this)
       .style("opacity", .5)
 }
-/*
+
 const mousemove = function(event, d) {
   const formater =  d3.format(",")
     tooltip
@@ -84,7 +84,7 @@ const mousemove = function(event, d) {
       .style("top", event.pageY - 10 + "px")
       .style("left", event.pageX + 10 + "px");
 }
-*/
+
 const mouseleave = function(d) {
     tooltip
       .style("opacity", 0)
@@ -107,7 +107,7 @@ bars = svg.append("g")
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
   .on("mouseover", mouseover)
-  //.on("mousemove", mousemove)
+  .on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
 
 // set title
@@ -131,7 +131,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", -(margin.left)*0.6+20)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/2.4))
     .text("1999")
 	
 svg
@@ -145,7 +145,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 46)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/2.4))
     .text("2005")
 	
 svg
@@ -159,7 +159,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 96)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/2.4))
     .text("2014")
 	
 svg
@@ -173,7 +173,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 146)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/2.4))
     .text("2021")	
 
 })
