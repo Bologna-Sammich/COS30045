@@ -131,7 +131,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", -(margin.left)*0.6+20)
-        .attr("y", -(margin.top/2.4))
+        .attr("y", -(margin.top/2.7))
     .text("1999")
 	
 svg
@@ -145,7 +145,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 46)
-        .attr("y", -(margin.top/2.4))
+        .attr("y", -(margin.top/2.7))
     .text("2005")
 	
 svg
@@ -159,7 +159,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 96)
-        .attr("y", -(margin.top/2.4))
+        .attr("y", -(margin.top/2.7))
     .text("2014")
 	
 svg
@@ -173,7 +173,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 146)
-        .attr("y", -(margin.top/2.4))
+        .attr("y", -(margin.top/2.7))
     .text("2021")	
 
 })
