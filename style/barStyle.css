@@ -1,6 +1,6 @@
 svg {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 35%;
 }
 .bar {
   fill: #0072BC;
@@ -20,21 +20,13 @@ text {
   stroke-opacity: 0.3;
 }
 text.chart-title {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
   fill:#222222
 }
 text.chart-label {
   font-size: 10px;
   font-weight: 400;
-  fill: #999999;
-}
-text.chart-source {
-  font-size: 8px;
-  fill: #999999;
-}
-text.copyright {
-  font-size: 8px;
   fill: #999999;
 }
 .tooltip {

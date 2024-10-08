@@ -1,14 +1,14 @@
 // set the dimensions and margins of the graph
-const margin = {top: 100, right: 20, bottom: 50, left: 40};
-const width = 450 - margin.left - margin.right;
-const height = 350 - margin.top - margin.bottom;
+const margin = {top: 50, right: 100, bottom: 100, left: 40};
+const width = 350 - margin.left - margin.right;
+const height = 280 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-const svg = d3.select("#chart")
+const svg = d3.select("#barChart")
   .append("svg")
-    .attr("width", "50%")
-    .attr("height", "50%")
-    //.attr("viewBox", "0 0 450 350")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("viewBox", "0 0 350 280")
     .attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -17,7 +17,7 @@ const svg = d3.select("#chart")
 d3.csv("data/public-primary-voluntary_1995-2023-new.csv").then(function(data){
 
 // data wrangling
-const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.TIME_PERIOD, d => d.REFERENCE_AREA)
+const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
 const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
@@ -39,7 +39,7 @@ const yScale = d3.scaleLinear()
     .range([height, 0]);
 svg
   .append('g')
-  .call(d3.axisLeft(yScale).ticks(5).tickSize(0).tickPadding(6).tickFormat(formater))
+  .call(d3.axisLeft(yScale).ticks(5).tickSize(0).tickPadding(6).tickFormat(function(d) { return formater(d) + "%"; }))
   .call(d => d.select(".domain").remove());
 
 // set subgroup sacle
@@ -63,33 +63,6 @@ svg
     .tickFormat("")
 );
 
-// create a tooltip
-const tooltip = d3.select("body")
-  .append("div")
-    .attr("id", "chart")
-    .attr("class", "tooltip");
-
-// tooltip events
-const mouseover = function(d) {
-    tooltip
-      .style("opacity", .8)
-    d3.select(this)
-      .style("opacity", .5)
-}
-const mousemove = function(event, d) {
-  const formater =  d3.format(",")
-    tooltip
-      .html(formater(d[1]))
-      .style("top", event.pageY - 10 + "px")
-      .style("left", event.pageX + 10 + "px");
-}
-const mouseleave = function(d) {
-    tooltip
-      .style("opacity", 0)
-    d3.select(this)
-      .style("opacity", 1)
-}
-
 // create bars
 bars = svg.append("g")
   .selectAll("g")
@@ -97,25 +70,37 @@ bars = svg.append("g")
   .join("g")
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
-  .data(d => { return d[0] })
+  .data(d => { return d[1] })
   .join("rect")
      .attr("x", d => xSubgroups(d[0]))
      .attr("y", d => yScale(d[1]))
      .attr("width", xSubgroups.bandwidth())
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
-  .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
-  .on("mouseleave", mouseleave);
+	 .on("mouseover", function(event, d) {
+		 var xPos = parseFloat(d3.select(this).attr("x"))
+		 var yPos = parseFloat(d3.select(this).attr("y"))
+		 
+		 svg.append("text")
+			.attr("id", "tooltip")
+			.attr("x", xPos)
+			.attr("y", yPos)
+			.text(function(d) {
+				return d + "%";
+			});
+	 })
+	 .on("mouseout", function(d) {
+		 d3.select("#tooltip").remove();
+	 });
 
-// set Y axis label
+// set title
 svg
   .append("text")
-    .attr("class", "chart-label")
+    .attr("class", "chart-title")
     .attr("x", -(margin.left)*0.6)
-    .attr("y", -(margin.top/15))
+    .attr("y", -(margin.top)/1.5)
     .attr("text-anchor", "start")
-  .text("Percentage of population")
+  .text("Public & primary voluntary health insurance as per population percentage")
 
 //set legend
 svg
@@ -129,7 +114,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", -(margin.left)*0.6+20)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/3.1))
     .text("1999")
 	
 svg
@@ -143,7 +128,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 46)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/3.1))
     .text("2005")
 	
 svg
@@ -157,7 +142,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 96)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/3.1))
     .text("2014")
 	
 svg
@@ -171,7 +156,7 @@ svg
     .append("text")
         .attr("class", "legend")
         .attr("x", 146)
-        .attr("y", -(margin.top/2.5))
+        .attr("y", -(margin.top/3.1))
     .text("2021")	
 
 })
