@@ -12,10 +12,10 @@ h1 {
 .chart-capt {
     margin-top: 20px;
     margin-bottom: 30px;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 10px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 		font-family: Arial;
 }
 
