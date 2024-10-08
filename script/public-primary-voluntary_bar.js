@@ -78,10 +78,13 @@ const mouseover = function(d) {
 }
 const mousemove = function(event, d) {
   const formater =  d3.format(",")
+  let xPos = event.pageX;
+  let yPos = event.pageY;
+
     tooltip
-      .html(formater(d[1]))
-      .style("top", event.pageY - 10 + "px")
-      .style("left", event.pageX + 10 + "px");
+      .text(formater(d[1]) + "%")
+      .attr("x", xPos)
+      .attr("y", yPos);
 }
 const mouseleave = function(d) {
     tooltip
@@ -106,7 +109,7 @@ bars = svg.append("g")
      .attr("fill", d=>color(d[0]))
 	 .on("mouseover", mouseover)
   .on("mousemove", mousemove)
-  .on("mouseleave", mouseleave);;
+  .on("mouseleave", mouseleave);
 
 // set title
 svg
