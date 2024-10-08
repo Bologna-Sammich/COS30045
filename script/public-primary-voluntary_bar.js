@@ -1,14 +1,14 @@
 // set the dimensions and margins of the graph
 const margin = {top: 50, right: 100, bottom: 100, left: 40};
 const width = 350 - margin.left - margin.right;
-const height = 300 - margin.top - margin.bottom;
+const height = 280 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#barChart")
   .append("svg")
     .attr("width", "100%")
     .attr("height", "100%")
-    .attr("viewBox", "0 0 350 300")
+    .attr("viewBox", "0 0 350 280")
     .attr("preserveAspectRatio", "xMinYMin")
   .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
