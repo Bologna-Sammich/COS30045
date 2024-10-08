@@ -66,30 +66,22 @@ svg
     .tickFormat("")
 );
 
-// create a tooltip
-const tooltip = d3.select("body")
-  .append("div")
-    .attr("id", "chart")
-    .attr("class", "tooltip");
-
 // tooltip events
-const mouseover = function(d) {
-    tooltip
-      .style("opacity", .8)
+// create tooltip
+const mouseover = function(event, d) {
+	var mousePos = d3.pointer(event);
+	var xPos = mousePos[0];
+	var yPos = mousePos[1];
+    svg.append("text")
+		.attr("id", "tooltip")
+		.attr("x", xPos)
+		.attr("y", yPos)
+		.attr("text-anchor", "middle")
+		.text(d + "%")
     d3.select(this)
       .style("opacity", .5)
 }
-const mousemove = function(event, d) {
-  const formater =  d3.format(",")
-  var mousePos = d3.pointer(event);
-  var xPos = mousePos[0];
-  var yPos = mousePos[1];
-
-    tooltip
-      .html(formater(d[1]) + "%")
-      .style("top", xPos + "px")
-      .style("left", yPos + "px");
-}
+// remove tooltip
 const mouseleave = function(d) {
     tooltip
       .style("opacity", 0)
@@ -111,8 +103,7 @@ bars = svg.append("g")
      .attr("width", xSubgroups.bandwidth())
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
-	 .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
+  .on("mouseover", mouseover)
   .on("mouseleave", mouseleave);
 
 // set title
