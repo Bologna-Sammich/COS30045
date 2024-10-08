@@ -30,7 +30,10 @@ const xScale = d3.scaleBand()
 svg
   .append('g')
   .attr("transform", `translate(0,${height})`)
-  .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8));
+  .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8))
+  .selectAll("text")
+  .attr("transform", "rotate(45)")
+  .style("text-anchor", "start");
 
 // Y scale and Axis
 const formater =  d3.format(".1s")
