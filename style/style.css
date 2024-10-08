@@ -9,7 +9,7 @@ h1 {
 	fill: none;
 }
 
-.chart-capt {
+div {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -20,14 +20,14 @@ h1 {
 		font-family: Arial;
 }
 
-.chart-capt h2 {
+div h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333; /* Dark color for emphasis */
 }
 
-.chart-capt p {
+div p {
     font-size: 16px;
     color: #666; /* Lighter color for readability but subtle */
     line-height: 1.6; /* Increases readability */
