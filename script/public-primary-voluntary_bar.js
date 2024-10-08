@@ -22,6 +22,15 @@ const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
 
+// add options to the filter
+d3.select("#filterChecks")
+  .selectAll("filterOptions")
+	.data(countryKeys)
+  .enter()
+	.append("input")
+	  .attr("type", "checkbox")
+	  .attr("value", d.REFERENCE_AREA);
+
 // X scale and Axis
 const xScale = d3.scaleBand()
   .domain(countryKeys)
@@ -96,6 +105,8 @@ bars = svg.append("g")
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
   .data(d => { return d[1] })
+  .transition()
+  .duration(1200)
   .join("rect")
      .attr("x", d => xSubgroups(d[0]))
      .attr("y", d => yScale(d[1]))
