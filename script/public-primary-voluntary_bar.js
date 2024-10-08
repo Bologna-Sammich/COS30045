@@ -30,12 +30,11 @@ d3.select("#filterChecks")
 	.data(countryKeys)
   .enter()
 	.append("label")
-	  .attr("id", "check")
 	  .html(function(d) { return d; })
-	.selectAll("#check")
 	.append("input")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) { return d; })
+	  .attr("id", "check")
 	.html("<br>");  
 
 // X scale and Axis
@@ -187,4 +186,28 @@ svg
         .attr("y", -(margin.top/3.1))
     .text("2021")	
 
-})
+function update(selectedCountry) {
+
+      // Create new data with the selection?
+      var dataFilter = data.filter(function(d){return d.name==selectedCountry})
+
+      // Give these new data to update line
+      line
+          .datum(dataFilter)
+          .transition()
+          .duration(1000)
+          .attr("d", d3.line()
+            .x(function(d) { return x(d.year) })
+            .y(function(d) { return y(+d.n) })
+          )
+          .attr("stroke", function(d){ return myColor(selectedCountry) })
+    }
+
+d3.select("#selectButton").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        update(selectedOption)
+    })
+
+});
