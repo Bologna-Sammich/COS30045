@@ -1,5 +1,6 @@
 svg {
-  width: 100%;
+  min-width: 60%;
+  max-width: 80%;
   height: 35%;
 }
 .bar {
