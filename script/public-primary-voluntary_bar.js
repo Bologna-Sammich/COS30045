@@ -63,6 +63,33 @@ svg
     .tickFormat("")
 );
 
+// create a tooltip
+const tooltip = d3.select("body")
+  .append("div")
+    .attr("id", "chart")
+    .attr("class", "tooltip");
+
+// tooltip events
+const mouseover = function(d) {
+    tooltip
+      .style("opacity", .8)
+    d3.select(this)
+      .style("opacity", .5)
+}
+const mousemove = function(event, d) {
+  const formater =  d3.format(",")
+    tooltip
+      .html(formater(d[1]))
+      .style("top", event.pageY - 10 + "px")
+      .style("left", event.pageX + 10 + "px");
+}
+const mouseleave = function(d) {
+    tooltip
+      .style("opacity", 0)
+    d3.select(this)
+      .style("opacity", 1)
+}
+
 // create bars
 bars = svg.append("g")
   .selectAll("g")
@@ -77,21 +104,9 @@ bars = svg.append("g")
      .attr("width", xSubgroups.bandwidth())
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
-	 .on("mouseover", function(event, d) {
-		 var xPos = parseFloat(d3.select(this).attr("x"))
-		 var yPos = parseFloat(d3.select(this).attr("y"))
-		 
-		 svg.append("text")
-			.attr("id", "tooltip")
-			.attr("x", xPos)
-			.attr("y", yPos)
-			.text(function(d) {
-				return d + "%";
-			});
-	 })
-	 .on("mouseout", function(d) {
-		 d3.select("#tooltip").remove();
-	 });
+	 .on("mouseover", mouseover)
+  .on("mousemove", mousemove)
+  .on("mouseleave", mouseleave);;
 
 // set title
 svg
