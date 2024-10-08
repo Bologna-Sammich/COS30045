@@ -73,63 +73,84 @@ function init() {
          .style("stroke-opacity", "0.7")
          .style("shape-rendering", "crispEdges");
 
-      var line = d3.line()
-        .x(function(d) { return xScale(d.year); })
-        .y(function(d) { return yScale(d.percentage); })
-        .curve(d3.curveBasis);
+        var line = d3.line()
+          .x(function(d) { return xScale(d.year); })
+          .y(function(d) { return yScale(d.percentage); })
+          .curve(d3.curveBasis);
 
-      var countries = Array.from(dataset.map(d => d.country))
+        var countries = Array.from(dataset.map(d => d.country))
 
-      var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+        var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-      countries.forEach(function(country, i) {
-        //Draw actual line
-        svg.append("path")
-          .datum(dataset.filter(function(d) {return d.country === country; }))
-          .attr("class", `line country-${i}`)
-          .attr("d", line)
-          .attr("stroke", colorScale(country))
-          .attr("stroke-width", "2")
-          .attr("fill", "none");
+        countries.forEach(function(country, i) {
+          //Draw actual line
+          svg.append("path")
+            .datum(dataset.filter(function(d) {return d.country === country; }))
+            .attr("class", `line country-${i}`)
+            .attr("d", line)
+            .attr("stroke", colorScale(country))
+            .attr("stroke-width", "2")
+            .attr("fill", "none");
 
-        //Invisible line with bigger hitbox for hovering
-        svg.append("path")
-          .datum(dataset.filter(function(d) { return d.country === country; }))
-          .attr("class", `hitbox country-${i}`)
-          .attr("d", line)
-          .attr("stroke", "none")
-          .attr("stroke-width", "7")  // Larger hitbox (10px width)
-          .attr("fill", "none")
-          .style("pointer-events", "stroke")
-          .on("mouseover", function(event, d) {
-            d3.select(`.line.country-${i}`)
-              .attr("stroke", "black");
+          //Invisible line with bigger hitbox for hovering
+          svg.append("path")
+            .datum(dataset.filter(function(d) { return d.country === country; }))
+            .attr("class", `hitbox country-${i}`)
+            .attr("d", line)
+            .attr("stroke", "none")
+            .attr("stroke-width", "7")  // Larger hitbox (10px width)
+            .attr("fill", "none")
+            .style("pointer-events", "stroke")
+            .on("mouseover", function(event, d) {
+              d3.select(`.line.country-${i}`)
+                .attr("stroke", "black");
 
-            var mouseCoords = d3.pointer(event);
-            var xPosition = mouseCoords[0];
-            // var yPosition = mouseCoords[1];
-            var xDate = xScale.invert(xPosition);
+              var mouseCoords = d3.pointer(event);
+              var xPosition = mouseCoords[0];
+              // var yPosition = mouseCoords[1];
+              var xDate = xScale.invert(xPosition);
 
-            var countryData = dataset.filter(function(d) { return d.country == country; });
-            var closestPoint = d.reduce(function(prev, curr) {
-              return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
-            });
+              var countryData = dataset.filter(function(d) { return d.country == country; });
+              var closestPoint = d.reduce(function(prev, curr) {
+                return (Math.abs(curr.year - xDate) < Math.abs(prev.year - xDate) ? curr : prev);
+              });
 
-            svg.append("text")
-              .attr("id", "tooltip")
-              .attr("x", xScale(closestPoint.year))
-              .attr("y", yScale(closestPoint.percentage) - 10)
-              .attr("text-anchor", "middle")
-              .attr("font-family", "sans-serif")
-              .attr("font-size", "11px")
-              .attr("font-weight", "bold")
-              .attr("fill", "black")
-              .text(`${country} ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`);
+              // Tooltip text
+              var tooltipText = `${country} ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`;
+
+              var textEl = svg.append("text")
+                .attr("id", "tooltip")
+                .attr("x", xScale(closestPoint.year))
+                .attr("y", yScale(closestPoint.percentage) - 10)
+                .attr("text-anchor", "middle")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("font-weight", "bold")
+                .attr("fill", "black")
+                .text(tooltipText);
+
+              var bbox = textElement.node().getBBox();  // Get text's bounding box
+
+                // Append a rectangle behind the text
+              svg.append("rect")
+                .attr("id", "tooltip-background")
+                .attr("x", bbox.x - 4)  // Add some padding
+                .attr("y", bbox.y - 2)  // Adjust for vertical padding
+                .attr("width", bbox.width + 8)  // Add horizontal padding
+                .attr("height", bbox.height + 4)  // Add vertical padding
+                .attr("fill", "white")  // Background color
+                .attr("stroke", "gray")  // Optional border to highlight it more
+                .attr("rx", 4)  // Rounded corners
+                .attr("ry", 4);
+
+              // Re-append the text so it's on top of the rectangle
+              textElement.raise();
           })
           .on("mouseout", function(d) {
             d3.select(`.line.country-${i}`)
               .attr("stroke", colorScale(country));
             d3.select("#tooltip").remove();
+            d3.select("#tooltip-background").remove();
           });
       })
 
