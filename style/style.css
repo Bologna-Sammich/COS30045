@@ -55,11 +55,11 @@ svg {
 #gallery {
 	display: block;
 	min-width: 20%;
-	max-width: 50%
+	max-width: 50%;
 	height: 150px;
 }
 
 img {
-	top: 50%
+	top: 50%;
 	max-width: 95%;
 }
