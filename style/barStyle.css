@@ -46,3 +46,6 @@ text.chart-label {
   display: block;
   padding: 10px;
 }
+form {
+  overflow: none;
+}
