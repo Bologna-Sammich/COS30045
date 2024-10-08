@@ -36,7 +36,7 @@ d3.select("#filterChecks")
 	  .attr("value", function(d) { return d; })
 	  .attr("id", "check");
 	
-	d3.selectAll("label").html("<br>");  
+	d3.selectAll("label").html("<br>"); 
 
 // X scale and Axis
 const xScale = d3.scaleBand()
@@ -190,7 +190,24 @@ svg
 function update(selectedCountry) {
 
       // Create new data with the selection?
-      var dataFilter = data.filter(function(d){return d.name==selectedCountry})
+      var dataFilter = dataRollup.filter(function(d){return d.REFERENCE_AREA==selectedCountry})
+
+	  bars
+		.data(dataFilter)
+		.transition()
+		.duration(1000)
+		.join("g")
+		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
+		.selectAll("rect")
+		  .data(d => { return d[1] })
+		.join("rect")
+		  .attr("x", d => xSubgroups(d[0]))
+		  .attr("y", d => yScale(d[1]))
+		  .attr("width", xSubgroups.bandwidth())
+		  .attr("height", d => height - yScale(d[1]))
+		  .attr("fill", d=>color(d[0]))
+		.on("mouseover", mouseover)
+		.on("mouseleave", mouseleave);
 
       // Give these new data to update line
       line
@@ -204,7 +221,7 @@ function update(selectedCountry) {
           .attr("stroke", function(d){ return myColor(selectedCountry) })
     }
 
-d3.select("#selectButton").on("change", function(d) {
+d3.select("#check").on("change", function(d) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
