@@ -77,8 +77,9 @@ const mouseover = function(d) {
       .style("opacity", .5)
 }
 const mousemove = function(event, d) {
-  const formater =  d3.format(".1s")
-  var xPos = parseFloat(d3.select(this).attr("x"))
+  const formater =  d3.format(",")
+  let xPos = event.clientX;
+  let yPos = event.clientY;
   var yPos = parseFloat(d3.select(this).attr("y"))
     tooltip
       .html(formater(d[1]) + "%")
@@ -107,8 +108,8 @@ bars = svg.append("g")
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
 	 .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
-  .on("mouseleave", mouseleave);;
+  .on("mousemove", mousemove(event))
+  .on("mouseleave", mouseleave);
 
 // set title
 svg
