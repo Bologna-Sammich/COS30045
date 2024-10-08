@@ -29,12 +29,8 @@ d3.select("#filterChecks")
   .enter()
 	.append("input")
 	  .attr("type", "checkbox")
-	  .attr("value", function(d) {
-		  return d;
-	  })
-  .selectAll("label")
-	.append("label")
-	  .text(function(d) { return d + "<br>"; });
+	  .attr("value", function(d) { return d; })
+	.text(function(d) { return d + "<br>"; });
 
 // X scale and Axis
 const xScale = d3.scaleBand()
