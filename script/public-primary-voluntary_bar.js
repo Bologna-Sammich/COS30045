@@ -22,6 +22,11 @@ const countryKeys = Array.from(dataRollup).map(d => d[0])
 const yearKey = Array.from(Array.from(dataRollup)[0][1]).map(d=>d[0])
 const yearKey_sorted = yearKey.sort(d3.ascending)
 
+const checkBox = d3.selectAll("#check")
+	.append("input")
+	  .attr("type", "checkbox")
+	  .attr("value", function(d) { return d; });
+
 // add options to the filter
 d3.select("#filterChecks")
   .selectAll("filterOptions")
@@ -30,11 +35,6 @@ d3.select("#filterChecks")
 	.append("label")
 	  .attr("id", "check")
 	  .html(function(d) { return checkBox(d) + "<br>"; });
-	  
-const checkBox = d3.selectAll("#check")
-	.append("input")
-	  .attr("type", "checkbox")
-	  .attr("value", function(d) { return d; });
 	
 
 // X scale and Axis
