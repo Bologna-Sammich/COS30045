@@ -86,9 +86,9 @@ const mousemove = function(event, d) {
   var yPos = mousePos[1];
 
     tooltip
-      .text(formater(d[1]) + "%")
-      .attr("x", xPos)
-      .attr("y", yPos);
+      .html(formater(d[1]) + "%")
+      .style("top", xPos + "px")
+      .style("left", yPos + "px");
 }
 const mouseleave = function(d) {
     tooltip
