@@ -35,18 +35,18 @@ svg {
 	shape-rendering: geometricPrecision; /* Ensures higher quality lines */
 }
 
-.placeholder {
+.galleryImage {
 	text-align: center;
 	border-radius: 8px;
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	background-color: grey;
 	margin: 5px;
 	float: left;
 	transition-duration: 0.7s;
 }
 
-.placeholder:hover {
+.galleryImage:hover {
 	border: 2px solid black;
 	transform: scale(1.25);
 	transition-duration: 0.7s;
