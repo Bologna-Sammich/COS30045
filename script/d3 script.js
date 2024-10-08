@@ -118,7 +118,7 @@ function init() {
               // Tooltip text
               var tooltipText = `${country} ${closestPoint.year.getFullYear()}: ${closestPoint.percentage}%`;
 
-              var textEl = svg.append("text")
+              var textElement = svg.append("text")
                 .attr("id", "tooltip")
                 .attr("x", xScale(closestPoint.year))
                 .attr("y", yScale(closestPoint.percentage) - 10)
