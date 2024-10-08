@@ -54,12 +54,13 @@ svg {
 
 #gallery {
 	display: block;
-	min-width: 20%;
+	min-width: 30%;
 	max-width: 50%;
 	height: 150px;
 }
 
 img {
+	position: absolute;
 	top: 50%;
 	max-width: 95%;
 }
