@@ -80,7 +80,7 @@ function init() {
 
         var countries = Array.from(dataset.map(d => d.country))
 
-        var colorScale = d3.scaleOrdinal(d3.schemeCategory40);
+        var colorScale = d3.scaleOrdinal(d3.schemeCategory20);
 
         countries.forEach(function(country, i) {
           //Draw actual line
