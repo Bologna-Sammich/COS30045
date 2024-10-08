@@ -41,3 +41,7 @@ text.chart-label {
 .legend{
   font-size: 10px;
 }
+#barWrap {
+  display: block;
+  padding: 10px;
+}

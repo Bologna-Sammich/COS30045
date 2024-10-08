@@ -74,9 +74,8 @@ const mouseover = function(event, d) {
 	var yPos = mousePos[1];
     svg.append("text")
 		.attr("id", "tooltip")
-		.attr("x", xPos)
-		.attr("y", yPos)
-		.attr("text-anchor", "middle")
+		.attr("x", xPos + 10)
+		.attr("y", yPos + 10)
 		.text(d + "%")
     d3.select(this)
       .style("opacity", .5)
