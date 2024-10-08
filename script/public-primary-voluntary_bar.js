@@ -14,7 +14,7 @@ const svg = d3.select("#barChart")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // parse the Data
-d3.csv("data/public-primary-voluntary_1995-2023-new.csv").then(function(data){
+d3.csv("data/public-primary-voluntary_1995-2023.csv").then(function(data){
 
 // data wrangling
 const dataRollup = d3.rollup(data, v => d3.sum(v, d => +d.OBS_VALUE), d => d.REFERENCE_AREA, d => d.TIME_PERIOD)
