@@ -83,8 +83,8 @@ const mouseover = function(event, d) {
 }
 // remove tooltip
 const mouseleave = function(d) {
-    tooltip
-      .style("opacity", 0)
+    svg.select("#tooltip")
+		.remove();
     d3.select(this)
       .style("opacity", 1)
 }
