@@ -28,9 +28,11 @@ d3.select("#filterChecks")
 	.data(countryKeys)
   .enter()
 	.append("input")
+	  .attr("id", "check")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) { return d; })
-	.text(function(d) { return d + "<br>"; });
+	.append("label")
+	  .text(function(d) { return d + "<br>"; });
 
 // X scale and Axis
 const xScale = d3.scaleBand()
