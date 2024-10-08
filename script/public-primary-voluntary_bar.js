@@ -31,7 +31,10 @@ d3.select("#filterChecks")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) {
 		  return d;
-	  });
+	  })
+  .selectAll("label")
+	.append("label")
+	  .text(function(d) { return d + "<br>"; });
 
 // X scale and Axis
 const xScale = d3.scaleBand()
@@ -113,8 +116,6 @@ bars = svg.append("g")
      .attr("width", xSubgroups.bandwidth())
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
-	 .transition()
-	 .duration(1200)
   .on("mouseover", mouseover)
   .on("mouseleave", mouseleave);
 
