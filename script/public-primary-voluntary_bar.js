@@ -34,7 +34,7 @@ d3.select("#filterChecks")
   .enter()
 	.append("label")
 	  .attr("id", "check")
-	  .html(function(d) { return checkBox(d) + "<br>"; });
+	  .html(function(d) { return checkBox + "<br>"; });
 	
 
 // X scale and Axis
