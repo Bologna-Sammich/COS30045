@@ -29,7 +29,7 @@ d3.select("#filterChecks")
   .enter()
 	.append("input")
 	  .attr("type", "checkbox")
-	  .attr("value", d.REFERENCE_AREA);
+	  .attr("value", countryKeys);
 
 // X scale and Axis
 const xScale = d3.scaleBand()
