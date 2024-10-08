@@ -29,10 +29,11 @@ const xScale = d3.scaleBand()
   .padding(.2);
 svg
   .append('g')
-  .attr("transform", `translate(30,${height})`)
+  .attr("transform", `translate(0,${height})`)
   .call(d3.axisBottom(xScale).tickSize(0).tickPadding(8))
   .selectAll("text")
-  .attr("transform", "rotate(45)");
+  .attr("transform", "rotate(45)")
+  .attr("transform", "translate(15,15)");
 
 // Y scale and Axis
 const formater =  d3.format(".1s")
