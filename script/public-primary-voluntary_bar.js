@@ -77,11 +77,13 @@ const mouseover = function(d) {
       .style("opacity", .5)
 }
 const mousemove = function(event, d) {
-  const formater =  d3.format(",")
+  const formater =  d3.format(".1s")
+  var xPos = parseFloat(d3.select(this).attr("x"))
+  var yPos = parseFloat(d3.select(this).attr("y"))
     tooltip
-      .html(formater(d[1]))
-      .style("top", event.pageY - 10 + "px")
-      .style("left", event.pageX + 10 + "px");
+      .html(formater(d[1]) + "%")
+      .attr("x", xPos)
+      .attr("y", yPos);
 }
 const mouseleave = function(d) {
     tooltip
