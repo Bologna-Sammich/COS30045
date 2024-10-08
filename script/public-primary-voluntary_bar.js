@@ -31,6 +31,8 @@ d3.select("#filterChecks")
 	  .attr("id", "check")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) { return d; })
+	  
+d3.selectAll("#check")
 	.append("label")
 	  .text(function(d) { return d + "<br>"; });
 
