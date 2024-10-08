@@ -28,11 +28,11 @@ d3.select("#filterChecks")
 	.data(countryKeys)
   .enter()
 	.append("label")
-	  .text(function(d) { return d + "<br>"; });
+	  .attr("id", "check")
+	  .html(function(d) { return d + "<br>"; });
 	  
 d3.selectAll("#check")
 	.append("input")
-	  .attr("id", "check")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) { return d; });
 	
