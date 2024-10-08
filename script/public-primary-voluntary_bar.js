@@ -196,9 +196,8 @@ function update(selectedCountry) {
 
 	  bars
 		.data(dataFilter)
-		.transition()
-		.duration(1000)
-		.attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
+		.join("g")
+		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
 		.selectAll("rect")
 		  .data(d => { return d[1] })
 		.join("rect")
