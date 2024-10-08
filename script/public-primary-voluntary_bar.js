@@ -82,7 +82,7 @@ const mousemove = function(event, d) {
   let yPos = event.pageY;
 
     tooltip
-      .html(formater(d[1]) + "%")
+      .text(formater(d[1]) + "%")
       .attr("x", xPos)
       .attr("y", yPos);
 }
