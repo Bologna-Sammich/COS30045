@@ -64,12 +64,11 @@ svg
 );
 
 // create a tooltip
-/*
 const tooltip = d3.select("body")
   .append("#chart")
     .attr("id", "tip")
     .attr("class", "tooltip");
-*/
+
 // tooltip events
 const mouseover = function(d) {
     tooltip
@@ -77,6 +76,7 @@ const mouseover = function(d) {
     d3.select(this)
       .style("opacity", .5)
 }
+/*
 const mousemove = function(event, d) {
   const formater =  d3.format(",")
     tooltip
@@ -84,6 +84,7 @@ const mousemove = function(event, d) {
       .style("top", event.pageY - 10 + "px")
       .style("left", event.pageX + 10 + "px");
 }
+*/
 const mouseleave = function(d) {
     tooltip
       .style("opacity", 0)
@@ -106,7 +107,7 @@ bars = svg.append("g")
      .attr("height", d => height - yScale(d[1]))
      .attr("fill", d=>color(d[0]))
   .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
+  //.on("mousemove", mousemove)
   .on("mouseleave", mouseleave);
 
 // set title
