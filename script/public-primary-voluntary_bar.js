@@ -103,7 +103,10 @@ bars = svg.append("g")
      .attr("y", d => yScale(d[1]))
      .attr("width", xSubgroups.bandwidth())
      .attr("height", d => height - yScale(d[1]))
-     .attr("fill", d=>color(d[0]));
+     .attr("fill", d=>color(d[0]))
+	 .on("mouseover", mouseover)
+  .on("mousemove", mousemove)
+  .on("mouseleave", mouseleave);;
 
 // set title
 svg
