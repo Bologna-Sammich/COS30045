@@ -29,9 +29,9 @@ d3.select("#filterChecks")
   .enter()
 	.append("label")
 	  .attr("id", "check")
-	  .html(function(d) { return d + "<br>"; });
+	  .html(function(d) { return checkBox(d) + "<br>"; });
 	  
-d3.selectAll("#check")
+const checkBox = d3.selectAll("#check")
 	.append("input")
 	  .attr("type", "checkbox")
 	  .attr("value", function(d) { return d; });
