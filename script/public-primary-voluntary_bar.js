@@ -81,8 +81,9 @@ const mouseover = function(d) {
 }
 const mousemove = function(event, d) {
   const formater =  d3.format(",")
-  let xPos = event.pageX;
-  let yPos = event.pageY;
+  var mousePos = d3.pointer(event);
+  var xPos = mousePos[0];
+  var yPos = mousePos[1];
 
     tooltip
       .text(formater(d[1]) + "%")
