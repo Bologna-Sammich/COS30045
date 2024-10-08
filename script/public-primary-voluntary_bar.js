@@ -65,7 +65,7 @@ svg
 
 // create a tooltip
 const tooltip = d3.select("body")
-  .append("#chart")
+  .append("div")
     .attr("id", "tip")
     .attr("class", "tooltip");
 
