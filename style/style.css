@@ -35,17 +35,16 @@ svg {
 	shape-rendering: geometricPrecision; /* Ensures higher quality lines */
 }
 
-.galleryImage {
+img {
+	max-width: 95%;
 	text-align: center;
-	width: 400px;
-	height: 400px;
-	margin: 5px;
+	width: auto;
+	padding: 10px;
 	float: left;
 	transition-duration: 0.7s;
 }
 
-.galleryImage:hover {
-	border: 2px solid black;
+img:hover {
 	transform: scale(1.15);
 	transition-duration: 0.7s;
 }
@@ -53,10 +52,7 @@ svg {
 #gallery {
 	display: block;
 	min-width: 30%;
-	max-width: 50%;
+	max-width: 40%;
+	margin-top:10px;
 	height: 150px;
-}
-
-img {
-	max-width: 95%;
 }
