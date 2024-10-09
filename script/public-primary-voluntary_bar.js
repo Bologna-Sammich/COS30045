@@ -41,7 +41,7 @@ d3.select("#filterChecks")
 	  .html("<br>"); 
 
 // X scale and Axis
-const xScale = d3.scaleBand()
+var xScale = d3.scaleBand()
   .domain(countryKeys)
   .range([0, width])
   .padding(.2);
@@ -64,7 +64,7 @@ svg
   .call(d => d.select(".domain").remove());
 
 // set subgroup sacle
-const xSubgroups = d3.scaleBand()
+var xSubgroups = d3.scaleBand()
   .domain(yearKey_sorted)
   .range([0, xScale.bandwidth()])
   .padding([0.05])
@@ -75,7 +75,7 @@ const color = d3.scaleOrdinal()
   .range(["#e41a1c","#377eb8","#4daf4a","#984ea3"])
 
 // set horizontal grid line
-const GridLine = () => d3.axisLeft().scale(yScale);
+var GridLine = () => d3.axisLeft().scale(yScale);
 svg
   .append("g")
     .attr("class", "grid")
@@ -199,9 +199,9 @@ d3.selectAll("#check").on("change", function() {
 	  svg.append("g")
 		.selectAll("g")
 		.data(dataRollup)
-		.filter(function(d) { return d[0] == selected; })
+		.filter(selected)
 		.join("g")
-		  .attr("id", d => d[0])
+		  .attr("id", selected)
 		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
 		.selectAll("rect")
 		.data(d => { return d[1] })
@@ -213,6 +213,14 @@ d3.selectAll("#check").on("change", function() {
 		  .attr("fill", d=>color(d[0]))
 		.on("mouseover", mouseover)
 		.on("mouseleave", mouseleave);
+		
+	  svg
+		.append('g')
+		.attr("transform", `translate(0,${height})`)
+		.call(d3.axisBottom(xScale).tickSize(0).tickPadding(8))
+		.selectAll("text")
+		.attr("transform", "rotate(45)")
+		.style("text-anchor", "start");
 		
 	} else {
 		svg.select("#"+selected).remove();
