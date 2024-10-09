@@ -107,10 +107,11 @@ const mouseleave = function(d) {
 }
 
 // create bars
-bars = svg.append("g")
+var bars = svg.append("g")
   .selectAll("g")
   .data(dataRollup)
   .join("g")
+	 .attr("id", d => d[0])
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
   .data(d => { return d[1] })
@@ -221,7 +222,7 @@ function update(selectedCountry) {
           .attr("stroke", function(d){ return myColor(selectedCountry) })
     }
 
-d3.select("#check").on("change", function(d) {
+d3.selectAll("#check").on("change", function(d) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
