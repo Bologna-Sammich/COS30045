@@ -190,18 +190,20 @@ svg
         .attr("y", -(margin.top/3.1))
     .text("2021")	
 
-/*
-function update(selectedCountry) {
-
-      // Create new data with the selection?
-      var dataFilter = data.filter(function(d){return d.REFERENCE_AREA==selectedCountry})
-
-	  bars
-		.data(dataFilter)
+d3.selectAll("#check").on("change", function() {
+	var selected = this.value,
+	display = this.checked ? true : false;
+	
+	if (display == true) {
+		
+	  svg.append("g")
+		.selectAll("g")
+		.data(dataRollup)
 		.join("g")
+		  .attr("id", d => d[0])
 		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
 		.selectAll("rect")
-		  .data(d => { return d[1] })
+		.data(d => { return d[1] })
 		.join("rect")
 		  .attr("x", d => xSubgroups(d[0]))
 		  .attr("y", d => yScale(d[1]))
@@ -210,22 +212,9 @@ function update(selectedCountry) {
 		  .attr("fill", d=>color(d[0]))
 		.on("mouseover", mouseover)
 		.on("mouseleave", mouseleave);
-    }
-
-d3.selectAll("#check").on("change", function(d) {
-        // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value")
-        // run the updateChart function with this selected option
-        update(selectedOption)
-    })
-*/
-
-d3.selectAll("#check").on("change", function() {
-	var selected = this.value,
-	display = this.checked ? "inline" : "none";
-	
-	svg.selectAll("rect")
-		.filter(function(d) { return d[0] == selected; })
-		.attr("display", display);
+		
+	} else {
+		svg.select("#"+selected).remove();
+	}
 });
 });
