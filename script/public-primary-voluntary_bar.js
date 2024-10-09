@@ -225,7 +225,7 @@ d3.selectAll("#check").on("change", function() {
 	display = this.checked ? "inline" : "none";
 	
 	svg.selectAll("rect")
-		.filter(function(d) { return d.REFERENCE_AREA == selected; })
+		.filter(function(d) { return d.value == selected; })
 		.attr("display", display);
 });
 });
