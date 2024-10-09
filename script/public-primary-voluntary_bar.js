@@ -111,7 +111,7 @@ var bars = svg.append("g")
   .selectAll("g")
   .data(dataRollup)
   .join("g")
-	 .attr("id", d => d[0].replace(/\s/g, ""));
+	 .attr("id", d => d[0].replace(/\s/g, ""))
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
   .data(d => { return d[1] })
