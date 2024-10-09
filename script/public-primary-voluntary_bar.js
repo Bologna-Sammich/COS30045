@@ -199,6 +199,7 @@ d3.selectAll("#check").on("change", function() {
 	  svg.append("g")
 		.selectAll("g")
 		.data(dataRollup)
+		.filter(function(d) { return d[0] == selected; })
 		.join("g")
 		  .attr("id", d => d[0])
 		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
