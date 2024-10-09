@@ -111,7 +111,7 @@ var bars = svg.append("g")
   .selectAll("g")
   .data(dataRollup)
   .join("g")
-	 .attr("id", d => d[0])
+	 .attr("id", d => d[0].replace(/\s/g, "");)
      .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
   .selectAll("rect")
   .data(d => { return d[1] })
@@ -201,7 +201,7 @@ d3.selectAll("#check").on("change", function() {
 		.data(dataRollup)
 		.filter(selected)
 		.join("g")
-		  .attr("id", selected)
+		  .attr("id", selected.replace(/\s/g, ""))
 		  .attr("transform", d => "translate(" + xScale(d[0]) +", 0)")
 		.selectAll("rect")
 		.data(d => { return d[1] })
@@ -223,7 +223,7 @@ d3.selectAll("#check").on("change", function() {
 		.style("text-anchor", "start");
 		
 	} else {
-		svg.select("#"+selected).remove();
+		svg.select("#"+selected.replace(/\s/g, "")).remove();
 		
 		svg
 		.append('g')
