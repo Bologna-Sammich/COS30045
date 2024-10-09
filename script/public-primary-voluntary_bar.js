@@ -190,6 +190,7 @@ svg
         .attr("y", -(margin.top/3.1))
     .text("2021")	
 
+/*
 function update(selectedCountry) {
 
       // Create new data with the selection?
@@ -209,17 +210,6 @@ function update(selectedCountry) {
 		  .attr("fill", d=>color(d[0]))
 		.on("mouseover", mouseover)
 		.on("mouseleave", mouseleave);
-
-      // Give these new data to update line
-      line
-          .datum(dataFilter)
-          .transition()
-          .duration(1000)
-          .attr("d", d3.line()
-            .x(function(d) { return x(d.year) })
-            .y(function(d) { return y(+d.n) })
-          )
-          .attr("stroke", function(d){ return myColor(selectedCountry) })
     }
 
 d3.selectAll("#check").on("change", function(d) {
@@ -228,5 +218,14 @@ d3.selectAll("#check").on("change", function(d) {
         // run the updateChart function with this selected option
         update(selectedOption)
     })
+*/
 
+d3.selectAll("#check").on("change", function() {
+	var selected = this.value,
+	display = this.checked ? "inline" : "none";
+	
+	svg.selectAll("rect")
+		.filter(function(d) { return d.REFERENCE_AREA == selected; })
+		.attr("display", display);
+});
 });
