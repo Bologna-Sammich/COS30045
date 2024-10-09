@@ -37,10 +37,8 @@ svg {
 
 .galleryImage {
 	text-align: center;
-	border-radius: 8px;
 	width: 400px;
 	height: 400px;
-	background-color: grey;
 	margin: 5px;
 	float: left;
 	transition-duration: 0.7s;
@@ -48,7 +46,7 @@ svg {
 
 .galleryImage:hover {
 	border: 2px solid black;
-	transform: scale(1.25);
+	transform: scale(1.15);
 	transition-duration: 0.7s;
 }
 
@@ -60,7 +58,5 @@ svg {
 }
 
 img {
-	position: absolute;
-	top: 50%;
 	max-width: 95%;
 }
