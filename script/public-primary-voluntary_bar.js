@@ -224,6 +224,14 @@ d3.selectAll("#check").on("change", function() {
 		
 	} else {
 		svg.select("#"+selected).remove();
+		
+		svg
+		.append('g')
+		.attr("transform", `translate(0,${height})`)
+		.call(d3.axisBottom(xScale).tickSize(0).tickPadding(8))
+		.selectAll("text")
+		.attr("transform", "rotate(45)")
+		.style("text-anchor", "start");
 	}
 });
 });
